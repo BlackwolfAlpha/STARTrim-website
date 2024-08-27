@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTrimAdminBoard</title>
+    <link rel="icon" type="image/x-icon" href="design/Logos/logo.png">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/CSS_files/Admin-tabs-style.css">
+    <link rel="stylesheet" href="design/CSS_files/forms-design-admin.css">
+    <link rel="stylesheet" href="design/CSS_files/media.css">
+</head>
+<body>
+    <div class="background">
+        <div class="navbar">
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin-board">
+            <div class="tabs">
+                <button onclick="showTab('userRequestsTab')">User Requests</button>
+                <button onclick="showTab('siteControlTab')">Site Control</button>
+            </div>
+
+            <div id="userRequestsTab" class="tab-content">
+                <h2>User Requests:</h2>
+                <p>Please enter the admin code to access user requests:</p>
+                <div id="userRequests">
+                    <p>Loading Data please wait...</p>
+                </div>
+            </div>
+
+            <div id="siteControlTab" class="tab-content">
+                <h2>Site Control:</h2>
+                <div class="sub-tabs">
+                    <button onclick="showSubTab('mainPageTab')">Main Page</button>
+                    <button onclick="showSubTab('homePageTab')">Home Page</button>
+                </div>
+
+                <div id="mainPageTab" class="sub-tab-content">
+                    <div class="sub-sub-tabs">
+                        <button onclick="showSubSubTab('eventsTab')">Events</button>
+                        <button onclick="showSubSubTab('commentsTab')">Comments</button>
+                    </div>
+
+                    <div id="eventsTab" class="sub-sub-tab-content">
+                        <button onclick="showAddEventForm()">Add Event</button>
+                        <div id="add-event-form" style="display: none;">
+                            <h3>Add New Event</h3>
+                            <form id="event-form">
+                                <label for="event-title">Title:</label>
+                                <input type="text" id="event-title" name="title" required>
+                                <label for="event-description">Description:</label>
+                                <textarea id="event-description" name="description" required></textarea>
+                                <label for="event-image" class="custom-file-upload">Image upload</label>
+                                <input type="file" id="event-image" name="image" accept="image/*">
+                                <br>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div id="events-container">
+                            <!-- Existing events will be displayed here -->
+                        </div>
+                    </div>
+
+                    <div id="commentsTab" class="sub-sub-tab-content">
+                        <button onclick="showAddCommentForm()">Add Comment</button>
+                        <div id="add-comment-form" style="display: none;">
+                            <h3>Add New Comment</h3>
+                            <form id="comment-form">
+                                <label for="comment-username-en">Username (EN):</label>
+                                <input type="text" id="comment-username-en" name="username-en" required>
+                                <label for="comment-username-he">Username (HE):</label>
+                                <input type="text" id="comment-username-he" name="username-he" required>
+                                <br>
+                                <label for="comment-description-en">Description (EN):</label>
+                                <textarea id="comment-description-en" name="description-en" required></textarea>
+                                <label for="comment-description-he">Description (HE):</label>
+                                <textarea id="comment-description-he" name="description-he" required></textarea>
+                                <label for="comment-image" class="custom-file-upload">Image upload</label>
+                                <input type="file" id="comment-image" name="image" accept="image/*">
+                                <br>
+                                <button type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div id="comments-container">
+                            <!-- Existing comments will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="homePageTab" class="sub-tab-content">
+                    <!-- Home Page content goes here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="java script/AdminEvent-Controll.js"></script>
+    <script src="java script/AdminComment-Controll.js"></script>
+    <script>
+        async function fetchDataFromGoogleSheet() {
+            try {
+                const response = await fetch('https://sheets.googleapis.com/v4/spreadsheets/1WrsrKtGqjdwbaL20Cs7TmScQNVp5kJRKcN0P6wHmdko/values/signupSTARTrim-form!A:I?key=AIzaSyAYSge_Rg_xblZbyj9vHdhMJzZOrGFylqI');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                return data.values;
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+                return null;
+            }
+        }
+
+        async function blockRequest(requestId, row) {
+            const requestDiv = document.getElementById(requestId);
+            requestDiv.style.display = 'none';
+            await deleteDataFromGoogleSheet(row);
+        }
+
+        async function deleteDataFromGoogleSheet(row) {
+            try {
+                const apiKey = 'AIzaSyAYSge_Rg_xblZbyj9vHdhMJzZOrGFylqI';
+                const spreadsheetId = '1WrsrKtGqjdwbaL20Cs7TmScQNVp5kJRKcN0P6wHmdko';
+                const range = `A${row}:I${row}`;
+                const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}:clear?key=${apiKey}`;
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({})
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to delete data');
+                }
+
+                const responseData = await response.json();
+                console.log('Deleted range:', responseData.clearedRange);
+            } catch (error) {
+                console.warn('Failed to delete data:', error.message);
+            }
+        }
+
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = tab.id === tabId ? 'block' : 'none';
+            });
+        }
+
+        window.onload = async function() {
+            const isAdmin = prompt("Please enter the admin code:");
+            if (isAdmin === "Blackwolf") {
+                document.querySelector('.tabs').style.display = 'flex'; // Show tabs
+                document.querySelector('.admin-board').style.display = 'block'; // Show admin board
+
+                showTab('userRequestsTab');
+                const data = await fetchDataFromGoogleSheet();
+                if (data) {
+                    displayData(data);
+                } else {
+                    const userRequestsDiv = document.getElementById('userRequests');
+                    userRequestsDiv.innerHTML = '<p>Error fetching data. Please try again later.</p>';
+                }
+            } else {
+                const userRequestsDiv = document.getElementById('userRequests');
+                userRequestsDiv.innerHTML = '<p>Unauthorized access. Please enter the correct admin code.</p>';
+                redirectToHomePage();
+            }
+        }
+
+        function redirectToHomePage() {
+            window.location.href = 'STARTrimHOME.html';
+        }
+
+        function displayData(data) {
+            const userRequestsDiv = document.getElementById('userRequests');
+            userRequestsDiv.innerHTML = '';
+            if (data.length > 1) {
+                for (let i = 1; i < data.length; i++) {
+                    const userData = data[i];
+                    const isBlocked = userData[8] === 'true';
+                    if (!isBlocked) {
+                        const requestId = 'request_' + i;
+                        const confirmationDiv = document.createElement('div');
+                        confirmationDiv.id = requestId;
+                        confirmationDiv.className = 'user-request';
+                        confirmationDiv.innerHTML = `
+                            <h3>User Request Confirmation</h3>
+                            <p><strong>Email:</strong> ${userData[0]}</p>
+                            <p><strong>Name:</strong> ${userData[1]} ${userData[2]}</p>
+                            <p><strong>City:</strong> ${userData[4]}</p>
+                            <p><strong>Age:</strong> ${userData[5]}</p>
+                            <p><strong>About:</strong> ${userData[6]}</p>
+                            <p><strong>Strengths:</strong> ${userData[7]}</p>
+                            <p><strong>How they heard about us:</strong> ${userData[8]}</p>
+                            <p><strong>Terms agreement:</strong> ${userData[9] ? 'Agreed' : 'Not agreed'}</p>
+                            <button onclick="approveRequest('${requestId}')">Approve</button>
+                            <button onclick="blockRequest('${requestId}', ${i})">Block</button>
+                            <p>Your request has been received.</p>
+                        `;
+                        userRequestsDiv.appendChild(confirmationDiv);
+                    }
+                }
+            } else {
+                userRequestsDiv.innerHTML = '<p>No user requests found.</p>';
+            }
+        }
+
+        function approveRequest(requestId) {
+            const requestDiv = document.getElementById(requestId);
+            const cells = requestDiv.querySelectorAll('p');
+            const approvedText = 'Approved';
+            cells.forEach(function(cell) {
+                if (cell.textContent.includes('Terms agreement:')) {
+                    const jCell = cell.nextElementSibling;
+                    jCell.textContent = approvedText;
+                }
+            });
+            requestDiv.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
