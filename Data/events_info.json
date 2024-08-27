@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Microsoft Reactor",
+        "description": "Description for Event 1",
+        "image": "design/eventsphoto/Microsoft Reactor.png"
+    },
+    {
+        "title": "Herzliya",
+        "description": "Description for Event 2",
+        "image": "design/eventsphoto/Herzliya.jpg"
+    },
+    {
+        "title": "Haifa technion",
+        "description": "Description for Event 3",
+        "image": "design/eventsphoto/Haifa technion.jpeg"
+    },
+    {
+        "title": "Teenk Tel-aviv",
+        "description": "Description for Event 4",
+        "image": "design/eventsphoto/teenk.png"
+    },
+    {
+        "title": "AWS Tel-aviv",
+        "description": "Description for Event 5",
+        "image": "design/eventsphoto/AWS telaviv.png"
+    },
+    {
+        "title": "MIXER Telaviv",
+        "description": "Description for Event 6",
+        "image": "design/eventsphoto/MIXER Telaviv.jpg"
+    }
+]

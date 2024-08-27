@@ -1,0 +1,40 @@
+[
+
+    {
+        "imageUrl": "design/commants/nikol.jpg",
+        "username": {
+            "en": "Shvartsman Nikol",
+            "he": "ניקול שוורצמן"
+        },
+        "description": {
+            "en": "description",
+            "he": "תיאור"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/Orly.jpg",
+        "username": {
+            "en": "Orly Horowitz",
+            "he": "אורלי הורוביץ"
+        },
+        "description": {
+            "en": "I never imagined that an entire community could be managed and rub only by teenagers! It is truly inconceivable!",
+            "he": "בחיים לא דמיינתי שקהילה שלמה יכולה להתנהל רק על ידי בני נוער! זה לא נתפס!"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/isreal.jpg",
+        "username": {
+            "en": "Israel Musaev",
+            "he": "ישראל מוסייב"
+        },
+        "description": {
+            "en": "description",
+            "he": "תיאור"
+        }
+    }
+
+]
+
