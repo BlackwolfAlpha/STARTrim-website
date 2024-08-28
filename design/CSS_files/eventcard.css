@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 20px;
+    gap: 20px;
+    height: 320px;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        overflow-y: hidden;
+    }
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 20px;
+    flex: 0 0 calc(33.33% - 20px);
+    height: 300px;
+    perspective: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__image::before {
+    content: attr(data-title);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 26px;
+    font-family: "Suez One", serif;
+    font-weight: bold;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.card__image:hover img {
+    transform: scale(1.1);
+}
+
+.card__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: translateY(0);
+}
+
+.card__title {
+    font-size: 22px;
+    font-family: "Suez One", serif;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.card__describe {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    line-height: 1.4;
+}

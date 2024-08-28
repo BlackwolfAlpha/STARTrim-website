@@ -1,0 +1,50 @@
+[
+    {
+        "title": "Microsoft Reactor",
+        "description": {
+            "en": "A launch event at Microsoft Reactor Tel Aviv on the subject of networking and with a workshop by Hila Bakshi, networking expert, manager of the metaphysics community, mentor for personal branding and growth for women.",
+            "he": "אירוע השקה במיקרוסופט ריאקטור תל אביב בנושא נטוורקינג ועם סדנה של הילה בקשי, מומחית לנטוורקינג, מנהלת קהילת המיטאפיסטיות, מנטורית למיתוג אישי וצמיחה לנשים.\n"
+        },
+        "image": "design/eventsphoto/Microsoft Reactor.png"
+    },
+    {
+        "title": "Herzliya",
+        "description": {
+            "en": "An event on economics and finance that took place at the Passage Center in Herzliya and included a lecture by Chen Friedman, a financial planner and capital market expert.",
+            "he": "אירוע בנושא כלכלה ופיננסים שהתקיים במרכז פסג\"ה בהרצליה וכלל הרצאה של חן פרידמן, מתכנן פיננסי ומומחה בשוק ההון."
+        },
+        "image": "design/eventsphoto/Herzliya.jpg"
+    },
+    {
+        "title": "Haifa technion",
+        "description": {
+            "en": "An event on market research at the Technion in Haifa with a lecture by Or Gabish, the founder and owner of MedSchool, CEO at GMCE Haifa Hub.",
+            "he": "אירוע בנושא חקר שוק בטכניון שבחיפה עם הרצאה של אור גביש, המייסדת, והבעלים של MedSchool, מנכ\"לית ב-GMCE Haifa Hub."
+        },
+        "image": "design/eventsphoto/Haifa technion.jpeg"
+    },
+    {
+        "title": "Teenk Tel-aviv",
+        "description": {
+            "en": "An event on marketing, branding and advertising in collaboration with the \"teenk\" advertising agency that took place at their offices in Tel Aviv and included a lecture by Leon Shneidrovsky, stylist, finalist of the first season of Big Brother, blogger, YouTuber, facilitator of style and fashion workshops, presenter of programs and owner and founder of a talent agency representing Kochavi network. and a lecture and conversation with Yaniv Weizman, founder and chairman of the Iggy association - a proud youth organization, CEO of Teenk, which deals with advertising and marketing for teenagers and a member of the city council, Tel Aviv",
+            "he": "אירוע בנושא שיווק, מיתוג ופרסום בשיתוף משרד הפרסום \"teenk\" שהתקיים במשרדים שלהם בתל אביב וכלל הרצאה של לאון שניידורובסקי, סטייליסט, פיינליסט העונה הראשונה של האח הגדול, בלוגר, יוטיובר, מנחה סדנאות סטייל ואופנה, מגיש תוכניות ובעלים ומייסד של סוכנות טאלנטים המייצגת כוכבי רשת. והרצאה ושיחה עם יניב ויצמן, מייסד ויושב ראש עמותת איגי - ארגון נוער גאה, מנכ\"ל חברת טינק (teenk) העוסקת בפרסום ושיווק לבני נוער וחבר מועצת העיר, תל אביב"
+        },
+        "image": "design/eventsphoto/teenk.png"
+    },
+    {
+        "title": "MIXER Telaviv",
+        "description": {
+            "en": "A meeting at Mixer Tel Aviv to refine the needs of the community and collect information from very young people.",
+            "he": "מפגש במיקסר תל אביב לחידוד צורכי הקהילה ואיסוף מידע מאוד נוער."
+        },
+        "image": "design/eventsphoto/MIXER Telaviv.jpg"
+    },
+    {
+        "title": "AWS Tel-aviv",
+        "description": {
+            "en": "The event summing up the first year of activity that took place at the AWS offices in Tel Aviv, including a lecture on personal development by Dekal Yaakovovich, a consultant at MFA and founder of Genesis Accelerator. , Valia Spilkin, an expert in social media and marketing and presenter on the \"Kulana\" news page.",
+            "he": "אירוע סיכום שנת הפעילות הראשונה שהתקיים במשרדי AWS בתל אביב, הכלל הרצאה על התפתחות אישית של דקל יעקובוביץ', יועץ במפא\"ת ומייסד Genesis Accelerator. ופנאל בנושא מיתוג אישי ושיווק עם יאנה וקנו, הבלוגרית הראשונה בצה\"ל, יובל בנא, טיקטוקר ובלוגר צבאי, וליה ספילקין, מומחית בסושיאל ושיווק ומגישה בעמוד החדשות \"כולנו\""
+        },
+        "image": "design/eventsphoto/AWS telaviv.png"
+    }
+]
