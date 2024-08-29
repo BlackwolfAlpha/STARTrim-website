@@ -1,0 +1,168 @@
+.tabs {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f0f0f0;
+    margin-right: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, font-weight 0.3s, color 0.3s;
+}
+
+.tabs button.active {
+    background-color: #ddd;
+    font-weight: bold;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabs button:hover {
+    background-color: #eee;
+    color: #222;
+}
+
+.tab-content {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+.admin-board {
+    display: none;
+}
+
+#events-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#comments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    border: 4px solid #aaa;
+    background-color: #fff;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #888;
+}
+
+.card::before {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border: 4px solid #aaa;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.card:hover::before {
+    border-color: #888;
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card__image:hover img {
+    transform: scale(1.1);
+}
+
+.card__content {
+    padding: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.card__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card__describe {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+.card__author {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card__text {
+    font-size: 14px;
+    line-height: 1.4;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
