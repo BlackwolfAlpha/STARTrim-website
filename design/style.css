@@ -254,7 +254,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 160px;
 }
 
 .content_comment .par {
@@ -296,7 +296,6 @@ ul li a:hover {
     letter-spacing: 1.2px;
     line-height: 30px;
     text-align: center;
-    margin: 100;
 }
 
 .content h1 {
@@ -304,7 +303,7 @@ ul li a:hover {
     font-size: 60px;
     padding-left: 20px;
     letter-spacing: 2px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .content_info p.par {
@@ -723,6 +722,7 @@ body {
   margin: 40px auto;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 100px;
 }
 
 
@@ -839,7 +839,7 @@ body {
 
 .events-title {
     padding-bottom: 10px;
-    margin-top: 150px;
+    margin-top: 60px;
     font-family: "Suez One", serif;
     font-size: 35px;
     color: #fff;
