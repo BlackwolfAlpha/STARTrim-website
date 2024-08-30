@@ -557,6 +557,22 @@ body {
     margin-left: 10px;
 }
 
+.card_form_comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.card_form_comment img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .advertisement {
     margin: 20px auto;
     text-align: center;
