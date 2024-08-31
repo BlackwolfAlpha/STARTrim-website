@@ -218,16 +218,57 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1280px) {
     .sign-up-form {
-        top: 90%;
-        width: 400px;
+        width: 80%;
+        max-height: 85vh;
+        overflow: hidden;
+        top: 54%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .input-box, textarea, .button {
+        font-size: 16px;
+        padding: 8px;
+        margin: 6px 0;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-up-form {
+        width: 90%;
+        top: 52.5%;
+        transform: translate(-50%, -50%);
+    }
+
+    .input-box, textarea, .button {
+        font-size: 18px;
+        padding: 10px;
+        margin: 8px 0;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 600px) {
     textarea {
         font-size: 18px;
+    }
+}
+@media (max-width: 1280px) {
+    .events-title {
+        padding-top: 20px;
+        font-size: 30px;
     }
 }
 
@@ -238,19 +279,39 @@
     }
 }
 
-@media (max-width: 767px) {
-    #event-form, #comment-form {
-        width: 90%;
-        padding: 15px;
-    }
-}
-
 @media (min-width: 1025px) {
     #event-form, #comment-form {
         width: 50%;
         padding: 20px;
         position: relative;
         top: 5px;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 1024px) {
+    .content_comment {
+        margin-top: 290px;
+        width: 90%;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1025px) {
+    .card_comment::before {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .card_comment::before {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #event-form, #comment-form {
+        width: 90%;
+        padding: 15px;
     }
 }
 
@@ -265,6 +326,23 @@
         margin-bottom: 20px;
         flex: 0 0 auto;
         width: 100%;
+    }
+}
+
+@media (max-width: 1280px) {
+    .partners-container {
+        width: 100%;
+    }
+
+    .partner {
+        width: 150px;
+        height: 90px;
+        padding: 10px;
+    }
+
+    .partners-title {
+        font-size: 28px;
+        margin-bottom: 20px;
     }
 }
 
