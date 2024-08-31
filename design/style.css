@@ -37,12 +37,8 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #572283;
+    background: #d3d3d3;
     border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #4b0082;
 }
 
 .navbar {
@@ -254,7 +250,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 160px;
+    margin-top: 200px;
 }
 
 .content_comment .par {
@@ -304,6 +300,20 @@ ul li a:hover {
     padding-left: 20px;
     letter-spacing: 2px;
     margin-top: 20px;
+    position: relative;
+}
+
+.content h1::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 4px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
 }
 
 .content_info p.par {
@@ -331,7 +341,7 @@ ul li a:hover {
     transition: .3s ease;
 }
 
-.cn:hover {
+.content .cn:hover {
     background-color: #fff;
 }
 
@@ -738,14 +748,20 @@ body {
   margin: 40px auto;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
-
-.card_comment:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.7);
+.card_comment::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .bar_comment {
@@ -753,10 +769,6 @@ body {
   border-radius: 5px;
   background-color: #9147ff;
   transition: all 0.5s ease-in-out;
-}
-
-.card_comment:hover .bar_comment {
-  margin-right: 10px;
 }
 
 .card_form_comment {
@@ -972,34 +984,4 @@ body {
 .next-button {
     position: absolute;
     right: 10px;
-}
-
-@media (max-width: 768px) {
-    .partners-container {
-        flex-direction: column;
-        width: 100%;
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-
-    .partner {
-        width: 100%;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .scroll-button {
-        position: absolute;
-        z-index: 1;
-    }
-
-    .prev-button {
-        left: 50%;
-        transform: translateX(-100%);
-    }
-
-    .next-button {
-        right: 50%;
-        transform: translateX(100%);
-    }
 }
