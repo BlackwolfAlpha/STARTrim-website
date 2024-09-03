@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARTrimCommunity</title>
+    <link rel="icon" type="image/x-icon" href="design/Logos/x-STARTrimlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Suez+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="design/style.css">
+    <link rel="stylesheet" href="design/CSS_files/signup.css">
+    <link rel="stylesheet" href="design/CSS_files/media.css">
+</head>
+<body>
+
+<div class="background  signup-background">
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="index.html" data-translate="HOME">HOME</a></li>
+                </ul>
+                <div class="language-selector">
+                    <select id="language-select">
+                        <option value="en">English</option>
+                        <option value="he">עברית</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <div id="side-menu" class="side-menu">
+            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            <a href="index.html" data-translate="HOME">HOME</a>
+            <a href="Contact.html" data-translate="CONTACT">CONTACT</a>
+            <a href="#" id="toggle-login-signup2" data-translate="Login/SignUp">Login/SignUp</a>
+            <div class="language-selector">
+                <select id="language-select2">
+                    <option value="en">English</option>
+                    <option value="he">עברית</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="sign-up-form">
+            <form id="signup-form" method="post" action="">
+                <h2 id="join-community-heading" data-translate="join-community-heading">Join the Community</h2>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnQUfSqrqJzkEBfQMuRJAEetOfbzvPbfPOW66sS3LYZCTfMg/viewform?embedded=true"
+                        width="640" height="780" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="java script/STARTrimData.js"></script>
+<script src="java script/Terms agree.js"></script>
+<script src="java script/toggleMenu.js"></script>
+<script>
+    document.getElementById('language-select').addEventListener('change', function() {
+        let selectedLanguage = this.value;
+        changeLanguage(selectedLanguage);
+        localStorage.setItem('preferredLanguage', selectedLanguage);
+    });
+
+    function changeLanguage(selectedLanguage) {
+        fetch('Data/Language/' + selectedLanguage + '.json')
+            .then(response => response.json())
+            .then(data => {
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (data[key]) {
+                        element.textContent = data[key];
+                    }
+                });
+
+                document.getElementById('your-information-heading').textContent = data['YOUR_INFORMATION'];
+                document.getElementById('join-community-heading').textContent = data['JOIN_COMMUNITY'];
+            })
+            .catch(error => console.error('Error fetching language file:', error));
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const preferredLanguage = localStorage.getItem('preferredLanguage');
+        if (preferredLanguage) {
+            document.getElementById('language-select').value = preferredLanguage;
+            changeLanguage(preferredLanguage);
+            updateDirection(preferredLanguage);
+        } else {
+            const defaultLanguage = document.getElementById('language-select').value;
+            changeLanguage(defaultLanguage);
+            updateDirection(defaultLanguage);
+        }
+    });
+
+
+    document.getElementById('language-select').addEventListener('change', function() {
+        let selectedLanguage = this.value;
+        changeLanguage(selectedLanguage);
+        updateDirection(selectedLanguage);
+        localStorage.setItem('preferredLanguage', selectedLanguage);
+    });
+
+    function updateDirection(language) {
+        if (language === 'he') {
+            document.body.classList.add('rtl');
+            document.body.classList.remove('ltr');
+        } else {
+            document.body.classList.add('ltr');
+            document.body.classList.remove('rtl');
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const submitButton = document.getElementById('submit-btn');
+        submitButton.addEventListener('click', async function(event) {
+            event.preventDefault();
+            await submitForm();
+        });
+    });
+
+</script>
+
+</body>
+</html>
