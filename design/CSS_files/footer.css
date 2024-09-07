@@ -144,6 +144,7 @@
     border-radius: 0;
     object-fit: cover;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .social-item .social-text {
