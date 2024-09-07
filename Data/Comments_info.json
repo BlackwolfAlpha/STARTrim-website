@@ -1,0 +1,63 @@
+[
+
+    {
+        "imageUrl": "design/commants/nikol.jpg",
+        "username": {
+            "en": "Shvartsman Nikol",
+            "he": "ניקול שוורצמן"
+        },
+        "description": {
+            "en": "The community allows a crazy window of opportunity for youth from all over the country, it's a privilege to be a part of it",
+            "he": "הקהילה מאפשרת חלון הזדמנויות מטורף לבני נוער מרחבי הארץ וזאת זכות להיות חלק ממנה"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/Orly.jpg",
+        "username": {
+            "en": "Orly Horowitz",
+            "he": "אורלי הורוביץ"
+        },
+        "description": {
+            "en": "I never imagined that an entire community could be managed and rub only by teenagers! It is truly inconceivable!",
+            "he": "בחיים לא דמיינתי שקהילה שלמה יכולה להתנהל רק על ידי בני נוער! זה לא נתפס!"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/isreal.jpg",
+        "username": {
+            "en": "Israel Musaev",
+            "he": "ישראל מוסייב"
+        },
+        "description": {
+            "en": "STARTrim is an amazing community that taught me a lot of things\nand especially about forming and connecting with people,\nCommunity management has impacted my life for the better\nAnd it is impossible to explain in words how much I thank STARTrim for being with me and supporting me in the difficult and easy times in my entrepreneurial world",
+            "he": "סטארטרים היא קהילה מדהימה\nשלימדה אותי מלא דברים\nובעיקר על גיבוש וחיבור אל אנשים,\nניהול הקהילה השפיע על החיים שלי לטובה\nואי אפשר להסביר במילים עד כמה אני מודה לסטארטרים על כך שהיו איתי ותמכו בי בזמנים הקשים והקלים בעולם היזמות שלי"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/Netanel.jpg",
+        "username": {
+            "en": "Chertkov Netanel",
+            "he": "נתנאל צ'רטקוב"
+        },
+        "description": {
+            "en": "An amazing place that serves as a warm home for youth with a passion for entrepreneurship. The place that gives us all the tools we need for a changing and renewing job market\n",
+            "he": "מקום מדהים המשמש כבית חם לנוער בעל תשוקה ליזמות. המקום שנותן לנו את כל הכלים שאנחנו צריכים לשוק עבודה משתנה ומתחדש"
+        }
+    },
+
+    {
+        "imageUrl": "design/commants/Orit.png",
+        "username": {
+            "en": "Orit lewinski",
+            "he": "אורית לוינסקי"
+        },
+        "description": {
+            "en": "Amazing community! Warm and open and always provides interesting content, it's fun to be a part of it",
+            "he": "קהילה מדהימה! חמה ופתוחה ותמיד מספקת תכנים מעניינים, כיף להיות חלק ממנה"
+        }
+    }
+]
+
