@@ -10,9 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Suez+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="design/style.css">
     <link rel="stylesheet" href="design/CSS_files/eventcard.css">
-    <link rel="stylesheet" href="design/CSS_files/media.css">
     <link rel="stylesheet" href="design/CSS_files/footer.css">
     <link rel="stylesheet" href="design/CSS_files/teams.css">
+    <link rel="stylesheet" href="design/CSS_files/media.css">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
             <div class="menu">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo">
+                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo" loading="lazy">
                     </a>
                 </div>
                 <ul>
@@ -73,8 +73,8 @@
                         <button type="submit" class="btnn" data-translate="LOGIN">Login </button>
                     </form>
 
-                    <p class="link" data-translate="NO_ACCOUNT">Don't have an account<br>
-                        <a href="signup.html" data-translate="SIGN_UP">Sign up </a><a data-translate="HERE"> here</a></p>
+                    <p data-translate="dont_have_account">Don't have an account?</p><br>
+                        <a href="signup.html" data-translate="SIGN_UP">Sign up </a><a data-translate="HERE"> here</a>
                     <p class="liw" data-translate="LOGIN_WITH">Log in with</p>
 
                     <div class="icons">
@@ -129,37 +129,36 @@
             <div class="partners-container">
                 <button class="scroll-button prev-button" disabled>&#9664;</button>
                 <div class="partner">
-                    <img src="design/Partners logo/aws logo.png" alt="Partner 1">
+                    <img src="design/Partners logo/aws logo.png" alt="Partner 1" loading="lazy">
                 </div>
                 <div class="partner">
-                    <img src="design/Partners logo/TEENK logo.png" alt="Partner 2">
+                    <img src="design/Partners logo/TEENK logo.png" alt="Partner 2" loading="lazy">
                 </div>
                 <div class="partner">
-                    <img src="design/Partners logo/gav-yam_logo.png" alt="Partner 3">
+                    <img src="design/Partners logo/gav-yam_logo.png" alt="Partner 3" loading="lazy">
                 </div>
                 <div class="partner">
-                    <img src="design/Partners logo/technion_logo.png" alt="Partner 4">
+                    <img src="design/Partners logo/technion_logo.png" alt="Partner 4" loading="lazy">
                 </div>
                 <div class="partner">
-                    <img src="design/Partners logo/microsoft logo.png" alt="Partner 5">
+                    <img src="design/Partners logo/microsoft logo.png" alt="Partner 5" loading="lazy">
                 </div>
                 <div class="partner" style="display:none;">
-                    <img src="design/Partners logo/MIXER logo.png" alt="Partner 6">
+                    <img src="design/Partners logo/MIXER logo.png" alt="Partner 6" loading="lazy">
                 </div>
                 <div class="partner" style="display:none;">
-                    <img src="design/Partners logo/the_innovation logo.png" alt="Partner 7">
+                    <img src="design/Partners logo/the_innovation logo.png" alt="Partner 7" loading="lazy">
                 </div>
                 <div class="partner" style="display:none;">
-                    <img src="design/Partners logo/Herzliya logo.png" alt="Partner 8">
+                    <img src="design/Partners logo/Herzliya logo.png" alt="Partner 8" loading="lazy">
                 </div>
                 <div class="partner" style="display:none;">
-                    <img src="design/Partners logo/tech4ed logo.png" alt="Partner 9">
+                    <img src="design/Partners logo/tech4ed logo.png" alt="Partner 9" loading="lazy">
                 </div>
                 <button class="scroll-button next-button">&#9654;</button>
             </div>
         </section>
 
-        <br>
         <footer class="footer" id="footer">
             <div class="footer-wave">
                 <svg viewBox="0 0 1440 300" style="transform: rotate(180deg); transform-origin: center;">
@@ -172,7 +171,6 @@
                     </defs>
                     <path fill="url(#gradient)" d="M0,200C60,180,120,120,180,140C240,160,300,220,360,200C420,180,480,80,540,80C600,80,660,180,720,180C780,180,840,120,900,140C960,160,1020,220,1080,220C1140,220,1200,160,1260,140C1320,120,1380,180,1440,160L1440,320L0,320Z"></path>
                 </svg>
-
             </div>
             <div class="footer-content">
                 <p class="par" data-translate="Contact">
@@ -377,16 +375,12 @@
         });
     });
 
-    document.getElementById('language-select').addEventListener('change', function () {
-        let selectedLanguage = this.value;
-        changeLanguage(selectedLanguage);
-        localStorage.setItem('preferredLanguage', selectedLanguage);
-    });
-
-    document.getElementById('language-select2').addEventListener('change', function () {
-        let selectedLanguage = this.value;
-        changeLanguage(selectedLanguage);
-        localStorage.setItem('preferredLanguage', selectedLanguage);
+    document.querySelectorAll('#language-select, #language-select2').forEach(select => {
+        select.addEventListener('change', function () {
+            let selectedLanguage = this.value;
+            changeLanguage(selectedLanguage);
+            localStorage.setItem('preferredLanguage', selectedLanguage);
+        });
     });
 
     function changeLanguage(selectedLanguage) {
@@ -396,15 +390,14 @@
                 document.querySelectorAll('[data-translate]').forEach(element => {
                     const key = element.getAttribute('data-translate');
                     if (data[key]) {
-                        element.innerHTML = data[key];
-
-                        if (selectedLanguage === 'he' && containsHebrewText(data[key])) {
-                            document.documentElement.setAttribute('dir', 'rtl');
-                        } else if (selectedLanguage === 'en') {
-                            document.documentElement.setAttribute('dir', 'ltr');
+                        if (element.hasAttribute('placeholder')) {
+                            element.setAttribute('placeholder', data[key]);
+                        } else {
+                            element.innerHTML = data[key];
                         }
                     }
                 });
+                updateTextDirection(selectedLanguage);
             })
             .catch(error => console.error('Error fetching language file:', error));
     }
@@ -412,12 +405,13 @@
     document.addEventListener('DOMContentLoaded', function () {
         const preferredLanguage = localStorage.getItem('preferredLanguage');
         if (preferredLanguage) {
-            document.getElementById('language-select').value = preferredLanguage;
-            document.getElementById('language-select2').value = preferredLanguage;
+            document.querySelectorAll('#language-select, #language-select2').forEach(select => {
+                select.value = preferredLanguage;
+            });
             changeLanguage(preferredLanguage);
         } else {
-            changeLanguage(document.getElementById('language-select').value);
-            changeLanguage(document.getElementById('language-select2').value);
+            const defaultLanguage = document.getElementById('language-select').value;
+            changeLanguage(defaultLanguage);
         }
     });
 
@@ -426,9 +420,12 @@
         return hebrewRegex.test(text);
     }
 
-    function containsEnglishText(text) {
-        const englishRegex = /[a-zA-Z]/;
-        return englishRegex.test(text);
+    function updateTextDirection(language) {
+        if (language === 'he') {
+            document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+        }
     }
 
     function alignContentCenter() {
@@ -438,6 +435,7 @@
             content.style.textAlign = 'center';
         });
     }
+
 
     function directSignIn(email) {
         setUserDataInCookie(email);
