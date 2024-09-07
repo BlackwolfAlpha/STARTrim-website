@@ -31,6 +31,7 @@
     font-family: "Rubik", sans-serif;
     color: white;
     font-size: 30px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
     letter-spacing: 1.2px;
     line-height: 35px;
     font-weight: bold;
@@ -102,6 +103,7 @@
     color: #6a0dad;
     transition: color 0.3s, text-shadow 0.3s;
     font-family: "Rubik", sans-serif;
+    cursor: pointer;
 }
 
 .footer-bottom a:hover {
@@ -127,22 +129,13 @@
     background-color: #9F149F;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
 .social-item:hover {
-    transform: scale(1.2);
-    border-color: #FFFFFF;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-@media (hover: none) and (pointer: coarse) {
-    .social-item:hover {
-        transform: none;
-        border-color: initial;
-        box-shadow: none;
-    }
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .social-media img {
@@ -150,9 +143,10 @@
     height: 40px;
     border-radius: 10px;
     border: 3px solid transparent;
-    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease;
     margin-right: 10px;
 }
+
 
 .social-item .social-text {
     font-size: 20px;
@@ -160,78 +154,4 @@
     color: #FFFFFF;
     line-height: 1.2;
     margin-right: 10px;
-}
-
-@media (max-width: 767px) {
-    .social-media img {
-        width: 40px;
-        height: 30px;
-        margin: 0 6px;
-    }
-
-    .social-item {
-        display: flex;
-        width: 300px;
-        height: 80px;
-        align-items: center;
-        margin: 10px 0;
-        background-color: #9F149F;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
-        transition: box-shadow 0.3s ease;
-    }
-
-    .social-item .social-text {
-        font-size: 18px;
-    }
-
-    #contactUsContainer {
-        display: none;
-        background-color: #f9f9f9;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid #ccc;
-        width: 220px;
-        height: 160px;
-        margin: 50px auto;
-        color: #333;
-        border-radius: 10px;
-    }
-}
-
-@media (max-width: 576px) {
-    .social-media img {
-        width: 40px;
-        height: 30px;
-        margin: 0 4px;
-    }
-
-    .social-item {
-        display: flex;
-        width: 200px;
-        height: 80px;
-        align-items: center;
-        margin: 10px 0;
-        background-color: #9F149F;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
-        transition: box-shadow 0.3s ease;
-    }
-
-    .social-item .social-text {
-        font-size: 18px;
-    }
-
-    #contactUsContainer {
-        display: none;
-        background-color: #f9f9f9;
-        padding: 10px;
-        text-align: center;
-        border: 1px solid #ccc;
-        width: 220px;
-        height: 160px;
-        margin: 50px auto;
-        color: #333;
-        border-radius: 10px;
-    }
 }
