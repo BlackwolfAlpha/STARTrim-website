@@ -207,6 +207,7 @@ ul li a:hover {
     margin-right: 20px;
 }
 
+/* Side Menu Styles */
 .side-menu {
     height: 100%;
     width: 0;
@@ -216,29 +217,35 @@ ul li a:hover {
     left: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: width 0.5s;
     padding-top: 60px;
 }
 
+/* Menu Links */
 .side-menu a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s;
+    transition: color 0.3s, transform 0.3s;
+    transform: translateX(-20px);
 }
 
 .side-menu a:hover {
     color: #f1f1f1;
+    transform: translateX(0);
 }
 
+/* Close Button */
 .side-menu .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #f1f1f1;
+    cursor: pointer;
 }
 
 ul {
@@ -342,6 +349,7 @@ html[dir="rtl"] .content_comment::before {
 .content_comment .par {
     font-family: "Rubik", sans-serif;
     font-size: 20px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
     font-weight: bold;
     letter-spacing: 1.4px;
     line-height: 18px;
@@ -383,6 +391,7 @@ html[dir="rtl"] .content_comment::before {
 .content h1 {
     font-family: "Suez One", serif;
     font-size: 60px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
     padding-left: 20px;
     letter-spacing: 2px;
     margin-top: 20px;
@@ -497,16 +506,9 @@ html[dir="rtl"] .content_comment::before {
     font-weight: bold;
 }
 
-.form .link {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-.form .link a {
-    text-decoration: none;
-    color: #A020F0;
+a[data-translate="SIGN_UP"], a[data-translate="HERE"] {
+    color: #a020ef;
+    font-weight: bold;
 }
 
 .liw {
@@ -704,22 +706,31 @@ body {
 
 .join-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 18px;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #9F149F;
-    border: 2px solid #FFFFFF;
-    border-radius: 5px;
+    border: 2px solid #9F149F;
+    border-radius: 8px;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .join-button:hover {
     background-color: #FFFFFF;
     color: #9F149F;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.join-button:active {
+    background-color: #E0E0E0;
+    color: #9F149F;
+    transform: translateY(-1px);
 }
 
 #contactUsContainer {
@@ -913,6 +924,7 @@ html[dir="ltr"] .card_comment::before {
     color: #fff;
     text-align: center;
     letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 .events-title::before,
@@ -935,6 +947,7 @@ html[dir="ltr"] .card_comment::before {
 .partners-title {
     text-align: center;
     font-family: "Suez One", serif;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
     font-size: 35px;
     font-weight: 700;
     color: #fff;
@@ -977,6 +990,7 @@ html[dir="ltr"] .card_comment::before {
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .partner:hover {
