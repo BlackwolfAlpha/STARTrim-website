@@ -329,7 +329,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .content_comment::before {
@@ -416,7 +416,7 @@ html[dir="rtl"] .content_comment::before {
 
 .content_info p.par {
     font-family: "Rubik", sans-serif;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.6;
 }
 
@@ -920,7 +920,7 @@ html[dir="ltr"] .card_comment::before {
 }
 
 .events-title {
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     margin-top: 60px;
     font-family: "Suez One", serif;
     font-size: 35px;
@@ -941,20 +941,14 @@ html[dir="ltr"] .card_comment::before {
     margin-top: 5px;
 }
 
-.partners {
-    padding: 30px 20px;
-    background-color: rgba(111, 43, 165, 0.1);
-    margin-bottom: 50px;
-}
-
 .partners-title {
     text-align: center;
+    margin-bottom: 30px;
     font-family: "Suez One", serif;
     text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
-    font-size: 35px;
+    font-size: 36px;
     font-weight: 700;
     color: #fff;
-    margin-bottom: 30px;
     letter-spacing: 3px;
 }
 
