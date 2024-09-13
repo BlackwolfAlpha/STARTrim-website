@@ -56,6 +56,8 @@
     transition: opacity 0.3s ease-in-out;
     z-index: 2;
     pointer-events: none;
+    white-space: nowrap;
+    text-align: center;
 }
 
 .card__image:hover img {
