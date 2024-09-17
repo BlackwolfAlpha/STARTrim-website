@@ -6,9 +6,10 @@
     }
 }
 
+/* התאמות לרוחב מסך מקסימלי של 1280px */
 @media (max-width: 1280px) {
     .content h1::before {
-        top: -23px;
+        top: -20px;
     }
 }
 
@@ -81,11 +82,11 @@
     }
 }
 
-/* התאמות לרוחב מסך מינימלי של 1024px */
+/* התאמות לרוחב מסך מקסימלי של 1024px */
 @media (max-width: 1024px) {
     .content_comment {
-        margin-top: 150px;
-        width: 90%;
+        margin-top: 135px;
+        width: 100%;
         padding: 10px;
         font-size: 18px;
     }
@@ -101,6 +102,30 @@
         left: 50%;
         transform: translateX(-50%);
         z-index: -1;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .sign-up-form {
+        width: 90%;
+        max-height: 80vh;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .input-box, textarea, .button {
+        font-size: 14px;
+        padding: 6px;
+        margin: 4px 0;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 12px;
     }
 }
 
@@ -216,7 +241,17 @@
     }
 }
 
-/* התאמות לרוחב מסך מינימלי של 767px */
+/* התאמות לרוחב מסך מקסימלי של 767px */
+
+@media screen and (max-width: 767px) {
+    .signup-background {
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(background.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
 @media (max-width: 767px) {
     .content .logo_page {
         height: 75px;
@@ -571,7 +606,7 @@
 
 }
 
-/* התאמות לרוחב מסך מינימלי של 576px */
+/* התאמות לרוחב מסך מקסימלי של 576px */
 @media (max-width: 576px) {
     .main_logo {
         display: none;
