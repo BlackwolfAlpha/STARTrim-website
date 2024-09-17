@@ -13,15 +13,13 @@
     background-attachment: fixed;
 }
 
-@media (min-width: 768px) {
-    .signup-background {
-        width: 100%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 50%), url(heading.jpg);
-        background-position: center;
-        background-size: cover;
-        min-height: 100vh;
-        background-attachment: fixed;
-    }
+.signup-background {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.15) 50%, rgba(0, 0, 0, 0.15) 50%), url(heading.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
 }
 
 [dir="rtl"] {
@@ -792,7 +790,7 @@ body {
   margin: 40px auto;
   align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 .card_comment::before {
