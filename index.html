@@ -29,7 +29,8 @@
                 <ul>
                     <li><a href="EventsPage.html" data-translate="Events">Events</a></li>
                     <li><a href="#" id="contact-link" data-translate="CONTACT">CONTACT</a></li>
-                    <li><a href="#" id="toggle-login-signup" data-translate="Login/SignUp">Login/SignUp</a></li>
+                    <!-- Login popup control -->
+                    <!--<li><a href="#" id="toggle-login-signup" data-translate="Login/SignUp">Login/SignUp</a></li> -->
                 </ul>
 
                 <div class="language-selector">
@@ -45,7 +46,8 @@
             <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
             <a href="EventsPage.html" data-translate="Events">Events</a>
             <a href="#" id="contact-link2" data-translate="CONTACT">CONTACT</a>
-            <a href="#" id="toggle-login-signup2" data-translate="Login/SignUp">Login/SignUp</a>
+            <!-- Login popup control -->
+            <!-- <a href="#" id="toggle-login-signup2" data-translate="Login/SignUp">Login/SignUp</a> -->
             <div class="language-selector">
                 <select id="language-select2">
                     <option value="en">English</option>
@@ -524,7 +526,6 @@
         }
         return "";
     }
-
 
     document.getElementById('login-form').addEventListener('submit', async function (event) {
         event.preventDefault();
