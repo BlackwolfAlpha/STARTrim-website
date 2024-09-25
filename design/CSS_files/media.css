@@ -6,7 +6,23 @@
     }
 }
 
-/* התאמות לרוחב מסך מקסימלי של 1280px */
+@media (max-width: 1280px) {
+    .main_logo {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .content_comment::after {
+        display: none;
+    }
+    .content_comment::before {
+        display: none;
+    }
+}
+
 @media (max-width: 1280px) {
     .content h1::before {
         top: -20px;
@@ -37,16 +53,25 @@
 }
 
 @media (max-width: 1280px) {
-    .events-title {
-        padding-top: 210px;
-        font-size: 30px;
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 65px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0px;
+        text-align: center;
     }
 }
+
 
 @media (max-width: 1280px) {
     .content_comment {
         margin-top: 35px;
-        width: 90%;
+        width: 100%;
         padding: 10px;
         font-size: 18px;
     }
@@ -77,8 +102,9 @@
     }
 
     .partners-title {
-        font-size: 28px;
-        margin-bottom: 20px;
+        margin-top: 145px;
+        font-size: 30px;
+        text-align: center;
     }
 }
 
@@ -188,14 +214,23 @@
 }
 
 @media (max-width: 1024px) {
-    .events-title {
-        font-size: 40px;
-        padding-top: 8px;
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 75px;
         text-align: center;
     }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
 
+@media (max-width: 1024px) {
     .partners-title {
-        margin-top: 100px;
+        margin-top: 235px;
         font-size: 30px;
         text-align: center;
     }
@@ -241,7 +276,71 @@
     }
 }
 
+/* התאמות לרוחב מסך מקסימלי של 950px */
+@media (max-width: 950px) {
+    html[dir="rtl"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: -25px;
+        text-align: center;
+    }
+}
+
 /* התאמות לרוחב מסך מקסימלי של 767px */
+@media (max-width: 768px) {
+    .card_comment {
+        width: 90%;
+        max-width: 450px;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .text_m_comment {
+        font-size: 1em;
+    }
+
+    .text_s_comment {
+        font-size: 0.7em;
+    }
+
+    .text_d_comment {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+    html[dir="ltr"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 720px) {
+    html[dir="rtl"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 70px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 767px) {
     .signup-background {
@@ -335,27 +434,6 @@
 }
 
 @media (max-width: 767px) {
-    .card_comment {
-        width: 90%;
-        max-width: 450px;
-        margin: 20px auto;
-        padding: 10px;
-    }
-
-    .text_m_comment {
-        font-size: 1em;
-    }
-
-    .text_s_comment {
-        font-size: 0.7em;
-    }
-
-    .text_d_comment {
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 767px) {
     .card__image[data-title]::before {
         visibility: hidden;
     }
@@ -408,13 +486,6 @@
     .button {
         padding: 10px;
         font-size: 14px;
-    }
-}
-
-@media (max-width: 767px) {
-    .events-title {
-        padding-top: 180px;
-        font-size: 30px;
     }
 }
 
@@ -607,6 +678,21 @@
 }
 
 /* התאמות לרוחב מסך מקסימלי של 576px */
+@media (max-width: 576px) {
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: -10px;
+        text-align: center;
+    }
+}
+
 @media (max-width: 576px) {
     .main_logo {
         display: none;
