@@ -230,7 +230,7 @@ ul li a:hover {
     color: #818181;
     display: block;
     transition: color 0.3s, transform 0.3s;
-    transform: translateX(-20px);
+    transform: translateX(-5px);
 }
 
 .side-menu a:hover {
@@ -341,6 +341,10 @@ ul li a:hover {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+
+html[dir="ltr"] .content_comment::before {
+  top: -80px;
 }
 
 html[dir="rtl"] .content_comment::before {
