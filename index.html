@@ -396,7 +396,12 @@
 
     function changeLanguage(selectedLanguage) {
         fetch('Data/Language/' + selectedLanguage + '.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(data => {
                 document.querySelectorAll('[data-translate]').forEach(element => {
                     const key = element.getAttribute('data-translate');
@@ -409,9 +414,11 @@
                     }
                 });
                 updateTextDirection(selectedLanguage);
+                fetchEvents();
             })
             .catch(error => console.error('Error fetching language file:', error));
     }
+
 
     document.addEventListener('DOMContentLoaded', function () {
         const preferredLanguage = localStorage.getItem('preferredLanguage');
@@ -550,11 +557,18 @@
         }
     });
 
-    document.addEventListener("DOMContentLoaded", function() {
+    function fetchEvents() {
         fetch('Data/events_info.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(events => {
                 const container = document.getElementById('events-container');
+                container.innerHTML = '';
+
                 const language = localStorage.getItem('preferredLanguage') || 'en';
 
                 events.forEach(event => {
@@ -589,7 +603,8 @@
                 });
             })
             .catch(error => console.error('Error fetching events:', error));
-    });
+    }
+
 
     document.addEventListener("DOMContentLoaded", function() {
         fetch('Data/Comments_info.json')
