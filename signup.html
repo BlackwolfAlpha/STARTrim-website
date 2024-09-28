@@ -16,31 +16,28 @@
 
 <div class="background signup-background">
     <div class="navbar">
-        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
-        <header>
-            <div class="menu">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo">
-                    </a>
-                </div>
-                <ul>
-                    <li><a href="index.html" data-translate="HOME">HOME</a></li>
-                </ul>
-                <div class="language-selector">
-                    <select id="language-select">
-                        <option value="en">English</option>
-                        <option value="he">עברית</option>
-                    </select>
-                </div>
+        <div class="menu">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo">
+                </a>
             </div>
-        </header>
+            <ul>
+                <li><a href="index.html" data-translate="HOME">HOME</a></li>
+            </ul>
 
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="he">עברית</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <div id="side-menu" class="side-menu">
             <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
             <a href="index.html" data-translate="HOME">HOME</a>
-            <a href="Contact.html" data-translate="CONTACT">CONTACT</a>
-            <a href="#" id="toggle-login-signup2" data-translate="Login/SignUp">Login/SignUp</a>
             <div class="language-selector">
                 <select id="language-select2">
                     <option value="en">English</option>
@@ -48,33 +45,21 @@
                 </select>
             </div>
         </div>
+    </div>
 
-        <div class="sign-up-form">
-            <form id="signup-form" method="post" action="">
-                <h2 id="join-community-heading" data-translate="join-community-heading">Join the Community</h2>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnQUfSqrqJzkEBfQMuRJAEetOfbzvPbfPOW66sS3LYZCTfMg/viewform?embedded=true"
-                        width="640" height="780" frameborder="0" marginheight="0" marginwidth="0"></iframe>
-            </form>
-        </div>
+    <div class="sign-up-form">
+        <form id="signup-form" method="post" action="">
+            <h2 id="join-community-heading" data-translate="join-community-heading">Join the Community</h2>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScnQUfSqrqJzkEBfQMuRJAEetOfbzvPbfPOW66sS3LYZCTfMg/viewform?embedded=true"
+                    width="640" height="780" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+        </form>
     </div>
 </div>
 
 <script src="javascript/STARTrimData.js"></script>
 <script src="javascript/TermsAgree.js"></script>
-<script src="javascript/toggleMenu.js"></script>
+<script src="java script/toggleMenu.js"></script>
 <script>
-    function openSocialWindow(url) {
-        window.open(url, '_blank', 'width=600,height=400,menubar=no,toolbar=no,resizable=yes,scrollbars=yes');
-    }
-
-    function alignContentCenter() {
-        document.querySelectorAll('.content').forEach(content => {
-            content.style.marginLeft = 'auto';
-            content.style.marginRight = 'auto';
-            content.style.textAlign = 'center';
-        });
-    }
-    
     document.querySelectorAll('#language-select, #language-select2').forEach(select => {
         select.addEventListener('change', function () {
             let selectedLanguage = this.value;
