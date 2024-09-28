@@ -63,6 +63,18 @@
 <script src="javascript/TermsAgree.js"></script>
 <script src="javascript/toggleMenu.js"></script>
 <script>
+    function openSocialWindow(url) {
+        window.open(url, '_blank', 'width=600,height=400,menubar=no,toolbar=no,resizable=yes,scrollbars=yes');
+    }
+
+    function alignContentCenter() {
+        document.querySelectorAll('.content').forEach(content => {
+            content.style.marginLeft = 'auto';
+            content.style.marginRight = 'auto';
+            content.style.textAlign = 'center';
+        });
+    }
+    
     document.querySelectorAll('#language-select, #language-select2').forEach(select => {
         select.addEventListener('change', function () {
             let selectedLanguage = this.value;
