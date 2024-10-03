@@ -85,45 +85,79 @@ header {
     margin-left: 50px;
 }
 
-.menu-icon {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    margin-right: 20px;
-}
-
+/* General styles for the side menu */
 .side-menu {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
 }
 
-.side-menu a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-
-.side-menu .closebtn {
+.side-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #111;
+    z-index: 1;
 }
 
+.side-menu .closebtn {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.side-logo {
+    position: absolute;
+    left: 0;
+    top: -8px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.side-logo img {
+    max-width: 130px;
+    margin: 0;
+}
+
+.side-main {
+    margin-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.side-main a {
+    font-family: "Rubik", sans-serif;
+    font-size: 20px !important;
+    color: #FFFFFF !important;
+}
+
+.side-main a:hover {
+    color: #007BFF;
+}
+
+[dir="rtl"] .language-selector {
+    margin-right: 15px !important;
+}
+[dir="ltr"] .language-selector {
+    margin-left: 5px !important;
+}
+
+/* General styles for the Ul*/
 ul {
     float: left;
     display: flex;
@@ -140,7 +174,6 @@ ul {
     margin-right: 160px !important;
     margin-left: 0 !important;
 }
-
 
 ul li {
     list-style: none;
@@ -327,7 +360,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 130px;
+    margin-top: 260px;
 }
 
 .content_comment::before {
