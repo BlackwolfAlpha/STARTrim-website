@@ -35,13 +35,24 @@
             </div>
         </div>
         <div id="side-menu" class="side-menu">
-            <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-            <a href="index.html" data-translate="HOME">HOME</a>
-            <div class="language-selector">
-                <select id="language-select2">
-                    <option value="en">English</option>
-                    <option value="he">עברית</option>
-                </select>
+            <div class="side-header">
+                <div class="side-logo">
+                    <a href="index.html">
+                        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo" loading="lazy">
+                    </a>
+                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+            </div>
+
+            <div class="side-main">
+                <a href="index.html" data-translate="HOME">HOME</a>
+
+                <div class="language-selector">
+                    <select id="language-select2" onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="he">עברית</option>
+                    </select>
+                </div>
             </div>
         </div>
     </div>
