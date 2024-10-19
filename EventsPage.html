@@ -136,7 +136,12 @@
 
     document.addEventListener('DOMContentLoaded', function () {
         fetch('Data/events_info.json')
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
             .then(events => {
                 const container = document.getElementById('events-container');
                 const language = localStorage.getItem('preferredLanguage') || 'en';
@@ -148,16 +153,17 @@
 
                     const cardImage = document.createElement('div');
                     cardImage.classList.add('card__image');
-                    cardImage.setAttribute('data-title', event.title);
+                    cardImage.setAttribute('data-title', event.title[language] || event.title['en']); // Access title based on language
                     const img = document.createElement('img');
                     img.src = event.image;
                     cardImage.appendChild(img);
 
                     const cardContent = document.createElement('div');
                     cardContent.classList.add('card__content');
+
                     const cardTitle = document.createElement('p');
                     cardTitle.classList.add('card__title');
-                    cardTitle.textContent = event.title;
+                    cardTitle.textContent = event.title[language] || event.title['en']; // Updated to access the new title structure
 
                     const cardDescribe = document.createElement('p');
                     cardDescribe.classList.add('card__describe');
