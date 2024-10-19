@@ -112,6 +112,7 @@
             })
             .catch(error => console.error('Error fetching language file:', error));
     }
+
     document.addEventListener('DOMContentLoaded', function () {
         const preferredLanguage = localStorage.getItem('preferredLanguage');
         if (preferredLanguage) {
@@ -163,7 +164,7 @@
 
                     const cardTitle = document.createElement('p');
                     cardTitle.classList.add('card__title');
-                    cardTitle.textContent = event.title[language] || event.title['en']; // Updated to access the new title structure
+                    cardTitle.textContent = event.title[language] || event.title['en'];
 
                     const cardDescribe = document.createElement('p');
                     cardDescribe.classList.add('card__describe');
@@ -192,16 +193,18 @@
 
     function showDetail(event) {
         const detailContent = document.getElementById('event-detail-content');
+        const language = localStorage.getItem('preferredLanguage') || 'en'; // Get preferred language
+
         const carouselImages = event.images.map(media => {
             return media.type === 'image'
-                ? `<img src="${media.url}" alt="${event.title}" class="carousel-image">`
+                ? `<img src="${media.url}" alt="${event.title[language] || event.title['en']}" class="carousel-image">`
                 : media.type === 'video'
                 ? `<video controls class="carousel-image"><source src="${media.url}" type="video/mp4"></video>`
                 : '';
         });
 
         detailContent.innerHTML = `
-            <h2>${event.title}</h2>
+            <h2>${event.title[language] || event.title['en']}</h2> <!-- Access title based on language -->
             <div class="image-carousel" id="image-carousel">
                 <button class="prev-btn" onclick="navigateSlide(-1)">&#9664;</button>
                 <div id="carousel-wrapper" class="carousel-wrapper">
@@ -209,13 +212,14 @@
                 </div>
                 <button class="next-btn" onclick="navigateSlide(1)">&#9654;</button>
             </div>
-            <p>${event.longDescription[localStorage.getItem('preferredLanguage') || 'en'] || event.longDescription['en']}</p>
+            <p>${event.longDescription[language] || event.longDescription['en']}</p> <!-- Access long description based on language -->
         `;
 
         document.getElementById('event-details').classList.add('active');
         document.body.classList.add('no-scroll');
         updateCarousel();
     }
+
 
     function hideDetail() {
         const detailSection = document.getElementById('event-details');
