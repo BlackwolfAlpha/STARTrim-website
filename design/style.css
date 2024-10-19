@@ -360,7 +360,7 @@ ul li a:hover {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-top: 260px;
+    margin-top: 130px;
 }
 
 .content_comment::before {
