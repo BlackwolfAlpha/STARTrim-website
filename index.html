@@ -13,8 +13,17 @@
     <link rel="stylesheet" href="design/CSS_files/footer.css">
     <link rel="stylesheet" href="design/CSS_files/teams.css">
     <link rel="stylesheet" href="design/CSS_files/media.css">
+    <link rel="stylesheet" href="design/CSS_files/Intro.css">
 </head>
 <body>
+
+<div id="intro" class="intro-container">
+    <div class="intro-content">
+        <img src="design/Logos/startrimlogo.png" alt="STARTrim Logo" class="intro-logo">
+        <h1 class="intro-text">Welcome to STARTrim Community</h1>
+        <div id="countdown" class="countdown-timer"></div>
+    </div>
+</div>
 
 <div class="background">
     <div class="navbar">
@@ -250,7 +259,7 @@
                 </article>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 STARTrimCommunity. All rights reserved. | <a id="terms-link">Terms of Service</a></p>
+                <p>&copy; 2024 STARTrim Community. All rights reserved. | <a id="terms-link">Terms of Service</a></p>
                 <p>Created by Avital Gladkih</p>
             </div>
         </footer>
@@ -266,6 +275,7 @@
 <script src="java script/Partners-scroll.js"></script>
 <script src="java script/toggleMenu.js"></script>
 <script src="java script/Terms agree.js"></script>
+<script src="java script/Intro.js"></script>
 <script>
     function openSocialWindow(url) {
         window.open(url, '_blank', 'width=600,height=400,menubar=no,toolbar=no,resizable=yes,scrollbars=yes');
@@ -577,16 +587,17 @@
 
                     const cardImage = document.createElement('div');
                     cardImage.classList.add('card__image');
-                    cardImage.setAttribute('data-title', event.title);
+                    cardImage.setAttribute('data-title', event.title[language] || event.title['en']); // Accessing title based on language
                     const img = document.createElement('img');
                     img.src = event.image;
                     cardImage.appendChild(img);
 
                     const cardContent = document.createElement('div');
                     cardContent.classList.add('card__content');
+
                     const cardTitle = document.createElement('p');
                     cardTitle.classList.add('card__title');
-                    cardTitle.textContent = event.title;
+                    cardTitle.textContent = event.title[language] || event.title['en']; // Updated to access the new title structure
 
                     const cardDescribe = document.createElement('p');
                     cardDescribe.classList.add('card__describe');
