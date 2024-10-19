@@ -134,7 +134,7 @@
 }
 
 .social-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.065);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
@@ -143,8 +143,15 @@
     height: 50px;
     border-radius: 0;
     object-fit: cover;
+}
+
+html[dir="rtl"] .social-media img {
     margin-right: 10px;
+}
+
+html[dir="ltr"] .social-media img {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .social-item .social-text {
