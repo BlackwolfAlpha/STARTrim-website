@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // קבע תאריך סוף הספירה לאחור (21 באוקטובר 2024, 12:00)
-    const countdownDate = new Date("2024-10-21T12:00:00").getTime();
+    const countdownDate = new Date("2024-10-21T10:30:00").getTime();
 
     const x = setInterval(function() {
         const now = new Date().getTime();
