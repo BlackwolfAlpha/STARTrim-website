@@ -1,0 +1,666 @@
+/* General styling for the startup levels section */
+.STARTup_levels {
+    background: linear-gradient(#450066, #2c0140);
+    padding: 40px;
+    margin-top: -20px;
+}
+
+.STARTup_levels_page {
+    width: 100%;
+    min-height: 40vh;
+    background: linear-gradient(#2c0140, #450066);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: -22px;
+}
+
+/* Header styles */
+.Stages-header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.Stages-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.Stages-title_2 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: "Rubik", sans-serif;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.unStages-title {
+    font-size: 18px;
+    font-family: "Rubik", sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Body styles */
+.STARTup_levels-info {
+    max-width: 1100px;
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Stages-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Stages-choose {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Button styles */
+.section-stages__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    min-width: 142px;
+    width: 150px;
+    padding: 16px 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.section-stages__button:hover {
+    background-color: #fff;
+    border-color: #8310bc;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-stages__button-label {
+    display: inline-block;
+}
+
+/* Stage section */
+.section-stage {
+    margin: 30px 10px;
+}
+
+.stage-info-title h2 {
+    font-size: 28px;
+    color: white;
+    margin: 0;
+}
+
+.stage-info-title p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0 0;
+}
+
+/* Challenges section */
+.section-explanation {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-challenges {
+    width: auto;
+    margin: auto;
+    background-color: #fff;
+    padding: 40px 28px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-challenges h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.section-challenges p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.section-challenges__category {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.challenge-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: 20px;
+    border: 1px solid #C3C4CB;
+    cursor: pointer;
+    word-break: keep-all;
+    background-color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.challenge-button:hover {
+    background-color: #dfcdff;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.challenge-button__label {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    word-break: keep-all;
+    color: #323338;
+    text-align: right;
+}
+
+.challenge-explanation {
+    background-color: #fff;
+    border: 2.5px solid #9526c9;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 20px;
+    display: none;
+    font-size: 16px;
+    color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.challenge-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 26px;
+    color: #2a3b4c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #9526c9;
+    padding-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.challenge-description {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    color: #4a4a4a;
+    line-height: 1.9;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+/* End for STARTup_levels design*/
+
+/* Start for AI_blogs design*/
+.AI_blogs {
+    background: linear-gradient(#2c0140, #450066);
+    padding: 40px;
+    margin-top: -20px;
+}
+
+.AI_blogs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.AI_blogs-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.AI_blogs-more_button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.AI_blogs-more_button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+.AI_blogs-slides {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.AI_blogs-slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.AI_blogs-slides::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.AI_blogs-slides::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.AI_blogs-slides::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.AI_blogs-card {
+  width: 300px;
+  min-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+#AI_card {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+.AI_blogs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.AI_blogs-card_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #007BFF;
+}
+
+.AI_card_Content {
+    padding: 20px;
+    max-height: 180px;
+    height: 180px;
+    overflow: hidden;
+    transition: max-height .3s;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.AI_card_Content__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #bbb;
+    padding-bottom: 15px;
+}
+
+.AI_card_Content__tag,
+.AI_card_Content__duration,
+.AI_card_Content__author,
+.AI_card_Content__middle,
+.AI_blogs-card_title,
+.AI_blogs-card_description {
+    font-weight: 500;
+    color: #333;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    white-space: normal;
+    margin-bottom: 5px;
+}
+
+.AI_blogs-card_title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.AI_blogs-card_description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* Start for economy_blogs design*/
+.economy_blogs {
+    background: linear-gradient(#450066, #2c0140);
+    padding: 40px;
+    margin-top: -20px;
+}
+
+.economy_blogs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.economy_blogs-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.economy_blogs-more_button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.economy_blogs-more_button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+.economy_blogs-slides {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.economy_blogs-slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.economy_blogs-slides::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.economy_blogs-slides::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.economy_blogs-slides::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.economy_blogs-card {
+  width: 300px;
+  min-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+#economy_card {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+.economy_blogs-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.economy_blogs-card_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #007BFF;
+}
+
+.economy_card_Content {
+    padding: 20px;
+    max-height: 180px;
+    height: 180px;
+    overflow: hidden;
+    transition: max-height .3s;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.economy_card_Content__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #bbb;
+    padding-bottom: 15px;
+}
+
+.economy_card_Content__tag,
+.economy_card_Content__duration,
+.economy_card_Content__author,
+.economy_card_Content__middle,
+.economy_blogs-card_title,
+.economy_blogs-card_description {
+    font-weight: 500;
+    color: #333;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    white-space: normal;
+    margin-bottom: 5px;
+}
+
+.economy_blogs-card_title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.economy_blogs-card_description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+}
+
+/* Start for Youth_projects design*/
+.Youth_projects_Class {
+    background: linear-gradient(#2c0140, #450066);
+}
+
+.Youth_projects {
+    padding: 40px;
+}
+
+.Youth_projects-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.Youth_projects-title {
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+}
+
+.Youth_projects-more_button {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 15px;
+    border-radius: 23px;
+    cursor: pointer;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.Youth_projects-more_button:hover {
+    background-color: white;
+    color: #1a1a1a;
+}
+
+.Youth_projects-slides {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 10px;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  align-items: stretch;
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+}
+
+.Youth_projects-slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.Youth_projects-slides::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.Youth_projects-slides::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.Youth_projects-slides::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.Youth_projects-card {
+  width: 300px;
+  min-width: 300px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+#Youth_projects {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+}
+
+.Youth_projects-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.Youth_projects-card_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #007BFF;
+}
+
+.Youth_projects_Content {
+    padding: 20px;
+    max-height: 180px;
+    height: 180px;
+    overflow: hidden;
+    transition: max-height .3s;
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+}
+
+.Youth_projects_Content__top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #bbb;
+    padding-bottom: 15px;
+}
+
+.Youth_projects_Content__tag,
+.Youth_projects_Content__duration,
+.Youth_projects_Content__author,
+.Youth_projects_Content__middle,
+.Youth_projects-card_title,
+.Youth_projects-card_description {
+    font-weight: 500;
+    color: #333;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-width: 100%;
+    white-space: normal;
+    margin-bottom: 5px;
+}
+
+.Youth_projects-card_title {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.Youth_projects-card_description {
+    font-size: 16px;
+    line-height: 20px;
+    color: #666;
+}
