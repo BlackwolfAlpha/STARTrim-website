@@ -1,0 +1,176 @@
+{
+    "AI_blogs": [
+        {
+            "imageUrl": "design/Blogs_page/AI_blogs_images/AI-brain.jpg",
+            "tag": {
+                "en": "Blog",
+                "he": "בלוג"
+            },
+            "duration": {
+                "en": "3-4 min",
+                "he": "3-4 דקות קריאה"
+            },
+            "author": {
+                "en": "Noam Sharoni",
+                "he": "נועם שרוני"
+            },
+            "title": {
+                "en": "Is artificial intelligence a threat to us?",
+                "he": "האם הבינה המלאכותית מהווה איום אלינו?"
+            },
+            "link": "#",
+            "shortDescription": {
+                "en": "Artificial intelligence is not a threat to humanity, but a tool to improve our quality of life, the blog emphasizes the need for a balanced approach to the development of intelligence in a more responsible and safe manner.",
+                "he": "הבינה המלאכותית אינה איום על האנושות, אלא כלי לשיפור איכות החיים שלנו, הבלוג מדגיש את  הצורך בגישה מאוזנת לפיתוחה של הבינה באופן אחראי ובטוח יותר."
+            },
+            "longDescription": {
+                "en": "<div class=\"blog-container\"> <h1>Does artificial intelligence really pose a threat to humanity?</h1> <p>Artificial intelligence (AI) is not here to take over the world – it is here to improve it. <br> Its development is intended to expand access to knowledge, develop innovative tools, and change our reality for the better. <br> However, despite its clear advantages, many still view it with fear, even seeing it as a potential future threat, reminiscent of Hollywood scripts.</p> <p>When I ask my friends and family in WhatsApp groups about artificial intelligence, <br> the answers sometimes resemble scenes from science fiction movies: stories about machines gaining autonomy and threatening to take over our lives. <br> This is understandable – the rapid developments in the field raise concerns about our future and the possible impact of this technology on society.</p> <p>Indeed, artificial intelligence today is capable of performing many diverse tasks, from personal assistant roles <br> to learning systems that can process information and formulate complex insights. <br> However, its thinking capacity is still limited, and it is far from human-level understanding. <br> Despite its ability to process and use vast amounts of information, it lacks the emotional nuances and deep understanding of humans.</p> <p>Additionally, it is important to remember that the leading artificial intelligence companies are created and managed by people with knowledge, resources, and international influence. <br> Their goal is to leverage technology to make information accessible and create accurate visual tools tailored to human needs. <br> For example, if we ask AI to create an image of a squirrel on a skateboard in the middle of New York City, <br> it will learn to process visual elements and construct images according to user requests, with improving accuracy and diversity.</p> <p>Many artificial intelligence websites allow users to experiment with visual tools and choose different styles, <br> with the aim of gathering information and improving the algorithms that drive it. <br> This way, it learns what we prefer and improves its information matching to us.</p> <p>Therefore, it may be that we need to adopt a more balanced approach to artificial intelligence. <br> Instead of focusing on its threatening possibilities, we should consider how we can develop it responsibly and safely. <br> We should also think about potential challenges and dangers and formulate coping strategies before they arise.</p> <p>Ultimately, artificial intelligence is a tool that we shape with our own hands, <br> and it is our responsibility to ensure that it serves us well, improves the quality of life, and advances the world sustainably.</p></div>",
+                "he": "<div class=\"blog-container\"> <h1>האם הבינה המלאכותית באמת מהווה איום על האנושות?</h1> <p>הבינה המלאכותית (AI) אינה כאן כדי להשתלט על העולם – היא כאן כדי לשפר אותו. <br> פיתוחה נועד להרחיב את הנגישות לידע, לפתח כלים חדשניים, ולשנות את פני המציאות שלנו לטובה. <br> אולם, למרות היתרונות הברורים שלה, רבים עדיין מתייחסים אליה בחשש, ואף רואים בה איום עתידי פוטנציאלי, דמוי תסריטים הוליוודיים.</p> <p>כשאני שואל את חבריי ובני משפחתי בקבוצות ווטסאפ על הבינה המלאכותית, <br> התשובות לעיתים מזכירות סצנות מתוך סרטי מדע בדיוני: סיפורים על מכונות שמקבלות עצמאות ומאיימות להשתלט על חיינו. <br> זה מובן – ההתפתחות המסחררת בתחום מעוררת דאגות לגבי עתידנו וההשפעה האפשרית של הטכנולוגיה הזו על החברה.</p> <p>אכן, הבינה המלאכותית כיום מסוגלת לבצע משימות רבות ומגוונות, מתפקידי עוזר אישי <br> ועד למערכות לומדות שמסוגלות לעבד מידע ולגבש תובנות מורכבות. <br> עם זאת, כושר החשיבה שלה מוגבל עדיין, והיא רחוקה מרמת ההבנה האנושית. <br> על אף יכולתה לעבד ולהשתמש במידע בהיקף עצום, היא חסרה את הניואנסים הרגשיים וההבנה העמוקה של בני האדם.</p> <p>בנוסף, חשוב לזכור כי חברות הבינה המלאכותית המובילות נוצרו ונוהלו בידי אנשים בעלי ידע, משאבים והשפעה בינלאומית. <br> מטרתן היא למנף את הטכנולוגיה כדי להנגיש מידע וליצור כלים חזותיים מדויקים שמתאימים לצרכים האנושיים. <br> למשל, אם נבקש מהבינה ליצור תמונה של סנאי על סקייטבורד במרכז ניו יורק, <br> היא תלמד לעבד אלמנטים חזותיים ולבנות תמונות על פי בקשות המשתמשים, עם רמת דיוק וגיוון הולכים ומשתפרים.</p> <p>אתרי בינה מלאכותית רבים מאפשרים למשתמשים להתנסות עם כלים ויזואליים ולבחור סגנונות שונים, <br> מתוך כוונה לאסוף מידע ולשפר את האלגוריתמים שמפעילים אותה. <br> כך היא לומדת מה אנחנו מעדיפים, ומשתפרת בהתאמת המידע אלינו.</p> <p>אם כן, ייתכן כי עלינו לאמץ גישה מאוזנת יותר כלפי הבינה המלאכותית. <br> במקום להתמקד באפשרויותיה המאיימות, עלינו לשקול כיצד נוכל לפתח אותה באופן אחראי ובטוח. <br> כמו כן, כדאי לחשוב על האתגרים והסכנות האפשריים ולגבש דרכי התמודדות עוד בטרם הופעתם.</p> <p>בסופו של דבר, הבינה המלאכותית היא כלי שאנו מעצבים במו ידינו, <br> ואחריותנו לדאוג שהיא תשמש אותנו כראוי, לשפר את איכות החיים ולקדם את העולם באופן בר-קיימא.</p></div>"
+            }
+        },
+        {
+            "imageUrl": "design/Blogs_page/AI_blogs_images/AI-human.jpg",
+            "tag": {
+                "en": "Blog",
+                "he": "בלוג"
+            },
+            "duration": {
+                "en": "7 min",
+                "he": "7 דקות"
+            },
+            "author": {
+                "en": "Another Creator",
+                "he": "יוצר נוסף"
+            },
+            "title": {
+                "en": "Blog Title 2",
+                "he": "כותרת בלוג 2"
+            },
+            "link": "#",
+            "shortDescription": {
+                "en": "Another short description.",
+                "he": "תיאור קצר נוסף."
+            },
+            "longDescription": {
+                "en": "Long description for Blog Title 2.",
+                "he": "תיאור ארוך עבור כותרת בלוג 2."
+            }
+        }
+    ],
+    "economy_blogs": [
+        {
+            "link": "#",
+            "imageUrl": "design/Blogs_page/Economy_blogs_images/economy.jpg",
+            "tag": {
+                "en": "economy",
+                "he": "כלכלה"
+            },
+            "duration": {
+                "en": "5 min read",
+                "he": "קריאה של 5 דקות"
+            },
+            "author": {
+                "en": "Author Name 1",
+                "he": "שם מחבר 1"
+            },
+            "title": {
+                "en": "title",
+                "he": "כותרת1"
+            },
+            "shortDescription": {
+                "en": "Short description",
+                "he": "תיאור קצר"
+            },
+            "longDescription": {
+                "en": "Long description ",
+                "he": "תיאור ארוך של תוכן הבלוג "
+            }
+        },
+        {
+            "link": "#",
+            "imageUrl": "design/Blogs_page/Economy_blogs_images/economy2.jpg",
+            "tag": {
+                "en": "economy",
+                "he": "כלכלה"
+            },
+            "duration": {
+                "en": "3 min read",
+                "he": "קריאה של 3 דקות"
+            },
+            "author": {
+                "en": "Author Name 2",
+                "he": "שם מחבר 2"
+            },
+            "title": {
+                "en": "Blog Title 2",
+                "he": "כותרת בלוג 2"
+            },
+            "shortDescription": {
+                "en": "Short description",
+                "he": "תיאור קצר של תוכן הבלוג"
+            },
+            "longDescription": {
+                "en": "Long description",
+                "he": "תיאור ארוך"
+            }
+        }
+    ],
+    "Youth_projects": [
+        {
+            "link": "#",
+            "imageUrl": "design/Blogs_page/Youth_projects_logo/InoviteFuture Logo.png",
+            "tag": {
+                "en": "Education",
+                "he": "חינוך"
+            },
+            "duration": {
+                "en": "1-2 min",
+                "he": "1-2 דקות קריאה"
+            },
+            "author": {
+                "en": "Avital Gladkih",
+                "he": "אביטל גלדקיך"
+            },
+            "title": {
+                "en": "Inovite Future - NebulaU",
+                "he": "Inovite Future - NebulaU"
+            },
+            "shortDescription": {
+                "en": "A project to develop an interactive environment in classrooms with the help of a game process and cooperation between the students of the class.",
+                "he": "פרוייקט לפיתוח סביבה אניטרקטיבית בכיתות הלימוד בעזרת תהליך המשחוק ושיתוף הפעולה בין התלמידים בכיתה."
+            },
+            "longDescription": {
+                "en": "<div class=\"blog-container\"> <h1>NebulaU Platform Overview</h1> <p>NebulaU is a platform designed to help students learn at their individual level and progress within shared groups in their learning environment. <br> It integrates students into a gamified and visually engaging space, moving away from the outdated world of books and notebooks. <br> In a world where students spend much of their time on social media and screens, this initiative aims to optimize their learning time as well.</p> <p>The platform offers educational institutions internal competitions and learning challenges to enhance and assess students' understanding without the pressure of frequent exams and quizzes, which often create additional stress for students.</p></div>",
+                "he": "<div class=\"blog-container\"> <h1>סקירה על פלטפורמת NebulaU</h1> <p>NebulaU היא פלטפורמה שנועדה לעזור לתלמידים ללמוד ברמה האישית שלהם ולהתקדם בתוך קבוצות משותפות בסביבת הלמידה שלהם. <br> היא משלב את הסטודנטים במרחב משחקי ומרתק יותר מבחינה ויזואלית, בניגוד לעולם המיושן של ספרים ומחברות. <br> בעולם שבו התלמידים מבלים חלק ניכר מזמנם במדיה חברתית ובמסכים, יוזמה זו שואפת לייעל את זמנם גם ללמידה.</p>  <p>הפלטפורמה מציעה למוסדות החינוך תחרויות פנימיות ואתגרי למידה כדי לשפר ולהעריך את הבנת התלמידים מבלי הצורך בבחינות ומבדקים תכופים, <br> אשר לעיתים קרובות יוצרים לחץ ועומס נוסף על התלמידים.</p></div>"
+            }
+        },
+        {
+            "link": "#",
+            "imageUrl": "design/Blogs_page/Youth_projects_logo/youth_project2.jpg",
+            "tag": {
+                "en": "Community",
+                "he": "קהילה"
+            },
+            "duration": {
+                "en": "1-2 min",
+                "he": "1-2 דקות קריאה"
+            },
+            "author": {
+                "en": "Project Leader",
+                "he": "מוביל פרויקט"
+            },
+            "title": {
+                "en": "Youth Project Title 2",
+                "he": "כותרת פרויקט נוער 2"
+            },
+            "shortDescription": {
+                "en": "Short description of the youth project content.",
+                "he": "תיאור קצר של תוכן פרויקט הנוער."
+            },
+            "longDescription": {
+                "en": "Long description of the youth project content.",
+                "he": "תיאור ארוך של תוכן פרויקט הנוער."
+            }
+        }
+    ]
+}

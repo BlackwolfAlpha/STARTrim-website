@@ -1,0 +1,254 @@
+{
+  "stages": [
+    {
+      "id": "ideation-info",
+      "title": {
+        "en": "Ideation Stage",
+        "he": "Ideation Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Ideation stage...",
+        "he": "הסבר קצר על שלב Ideation"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the stage Ideation",
+        "he": "אתגרים בשלב Ideation"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Ideation stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Building a Minimum Viable Product (MVP)", "Joining as a Co-founder", "Consulting with people in the field of the problem I'm researching", "Idea validation", "I have an idea - what’s the next step?","Market research and competitors"],
+        "he": ["בניית מוצר ראשוני (MVP)", "הצטרפות כקו-פאונדר/ית", "התייעצות עם אנשים מעולם הבעיה שאני חוקר/ת", "ולידציה לרעיון", "יש לי רעיון- מה השלב הבא?", "מחקר שוק ומתחרים"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6"]
+      }
+    },
+    {
+      "id": "pre-seed-info",
+      "title": {
+        "en": "Pre-seed Stage",
+        "he": "Pre-seed Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Pre-seed stage...",
+        "he": "הסבר קצר על שלב Pre-seed"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the stage Pre-seed",
+        "he": "אתגרים בשלב Pre-seed"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Pre-seed stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Fundraising process operations", "Building a Minimum Viable Product (MVP)", "Raising funds", "Mapping and connecting with investors", "Market research and competitors", "Team management and building"],
+        "he": ["אופרציית תהליכי גיוס כסף", "בניית מוצר ראשוני (MVP)", "גיוס כסף", "מיפוי ויצירת קשר עם משקיעים", "מחקר שוק ומתחרים", "ניהול ובניית צוותים"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6"]
+      }
+    },
+    {
+      "id": "seed-info",
+      "title": {
+        "en": "Seed Stage",
+        "he": "Seed Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Seed stage...",
+        "he": "הסבר קצר על שלב Seed"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the stage Seed",
+        "he": "אתגרים בשלב Seed"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Seed stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Fundraising process operations", "Hiring the first employees", "Achieving product-market fit", "Validation of the solution", "Finding first customers and building a Go-to-Market strategy", "Finding a co-founder", "Team management and building", "User interviews"],
+        "he": ["אופרציית תהליכי גיוס כסף", "גיוס עובדים/ות ראשונים/ות", "הגעה לפרודקט מרקט פיט", "ולידציה לפיתרון", "מציאת לקוחות ראשונים ובניית אסטרטגיית Go-to-Market", "מציאת קו-פאונדר/ית", "ניהול ובניית צוות", "ראיונות משתמשים"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6",
+            "Explanation for Challenge 7",
+            "Explanation for Challenge 8"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6",
+            "הסבר לאתגר 7",
+            "הסבר לאתגר 8"]
+      }
+    },
+    {
+      "id": "early-stage-info",
+      "title": {
+        "en": "Early Stage",
+        "he": "Early Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Early stage...",
+        "he": "הסבר קצר על שלב Early"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the Early stage",
+        "he": "אתגרים בשלב Early"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Early stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Building and maintaining organizational culture", "Developing marketing and sales strategy", "Fundraising", "Hiring employees", "Achieving product-market fit", "Finding first customers and building a Go-to-Market strategy", "Managing operations (options, office, finances, etc.)", "Cash management and runway planning", "Employee management and team building", "Working with a co-founder", "User interviews", "Planning roadmap and building product strategy"],
+        "he": ["בנייה ושמירה על תרבות ארגונית", "בניית אסטרטגיית שיווק ומכירות", "גיוס כסף", "גיוס עובדים/ות", "הגעה לפרודקט מרקט פיט", "מציאת לקוחות ראשונים ובניית אסטרטגיית Go-to-Market", "ניהול אופרציה (אופציות, משרד, פיננסים וכו׳)", "ניהול מזומנים ותכנון ראנוויי", "ניהול עובדים ובניית צוות", "עבודה עם קו-פאונדר/ית", "ראיונות משתמשים", "תכנון רואדמאפ ובניית אסטרטגיה מוצרית"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6",
+            "Explanation for Challenge 7",
+            "Explanation for Challenge 8",
+            "Explanation for Challenge 9",
+            "Explanation for Challenge 10",
+            "Explanation for Challenge 11",
+            "Explanation for Challenge 12"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6",
+            "הסבר לאתגר 7",
+            "הסבר לאתגר 8",
+            "הסבר לאתגר 9",
+            "הסבר לאתגר 10",
+            "הסבר לאתגר 11",
+            "הסבר לאתגר 12"]
+      }
+    },
+    {
+      "id": "growth-stage-info",
+      "title": {
+        "en": "Growth Stage",
+        "he": "Growth Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Growth stage...",
+        "he": "הסבר קצר על שלב Growth"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the Growth stage",
+        "he": "אתגרים בשלב Growth"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Growth stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Building and maintaining organizational culture", "Developing marketing and sales strategy", "Fundraising and working with investors", "Hiring at scale", "Hiring an executive layer", "Defining/changing organizational structure", "Selling a startup", "Managing operations (office, finances, etc.)", "Scaling: business and product expansion", "Scaling: technological infrastructure"],
+        "he": ["בנייה ושמירה על תרבות ארגונית", "בניית אסטרטגיית שיווק ומכירות", "גיוס כסף ועבודה עם משקיעים", "גיוס עובדים בסקייל", "גיוס שכבת הנהלה", "הגדרת / שינוי מבנה ארגוני", "מכירה של סטארטאפ", "ניהול אופרציה (משרד, פיננסים וכו׳)", "עבודה בסקייל: התרחבות עסקית ומוצרית", "עבודה בסקייל: תשתית טכנולוגית"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6",
+            "Explanation for Challenge 7",
+            "Explanation for Challenge 8",
+            "Explanation for Challenge 9",
+            "Explanation for Challenge 10"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6",
+            "הסבר לאתגר 7",
+            "הסבר לאתגר 8",
+            "הסבר לאתגר 9",
+            "הסבר לאתגר 10"]
+      }
+    },
+    {
+      "id": "ipo-info",
+      "title": {
+        "en": "Scale/IPO Stage",
+        "he": "Scale/IPO Stage"
+      },
+      "shortExplanation": {
+        "en": "Short explanation about the Scale/IPO stage...",
+        "he": "הסבר קצר על שלב Scale/IPO"
+      },
+      "challengesTitle": {
+        "en": "Challenges at the Scale/IPO stage",
+        "he": "אתגרים בשלב Scale/IPO"
+      },
+      "challengesDetails": {
+        "en": "Details about the challenges in the Scale/IPO stage...",
+        "he": "בחרו אתגר, וגלו את התכנים והיוזמות המותאמים אליו."
+      },
+      "challengesList": {
+        "en": ["Hiring at scale", "Defining/changing organizational structure", "Going public", "Mergers and acquisitions", "Selling a startup", "Managing operations (office, finances, etc.)", "Scaling: company operations (managing offices in Israel and abroad, etc.)", "Scaling: business and product expansion"],
+        "he": ["גיוס עובדים בסקייל", "הגדרת / שינוי מבנה ארגוני", "יציאה להנפקה", "מיזוגים ורכישות", "מכירה של סטארטאפ", "ניהול אופרציה (משרד, פיננסים וכו׳)", "עבודה בסקייל: אופרציה של חברה (ניהול משרדים בארץ ובחו״ל ועוד)", "עבודה בסקייל: התרחבות עסקית ומוצרית"]
+      },
+      "challengesExplanations": {
+          "en": ["Explanation for Challenge 1",
+            "Explanation for Challenge 2",
+            "Explanation for Challenge 3",
+            "Explanation for Challenge 4",
+            "Explanation for Challenge 5",
+            "Explanation for Challenge 6",
+            "Explanation for Challenge 7",
+            "Explanation for Challenge 8"],
+          "he": ["הסבר לאתגר 1",
+            "הסבר לאתגר 2",
+            "הסבר לאתגר 3",
+            "הסבר לאתגר 4",
+            "הסבר לאתגר 5",
+            "הסבר לאתגר 6",
+            "הסבר לאתגר 7",
+            "הסבר לאתגר 8"]
+      }
+    }
+  ]
+}
