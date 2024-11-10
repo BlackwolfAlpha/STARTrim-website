@@ -1,4 +1,4 @@
-.container {
+.events-container {
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
@@ -6,7 +6,25 @@
     justify-content: space-between;
     height: auto;
     background: linear-gradient(#2c0140, #450066);
-    margin-top: -20px;
+}
+
+.Events-title-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -25px;
+    padding: 30px;
+    background: linear-gradient(#450066, #2c0140);
+}
+
+.Events-zone-title {
+    margin-top: 0;
+    font-family: "Suez One", serif;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
 }
 
 body.no-scroll {
