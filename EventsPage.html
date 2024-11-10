@@ -57,24 +57,28 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="container scroll-1" id="events-container">
-            <!-- Dynamic events will be inserted here -->
+    <div class="Main-Events-page">
+        <div class="Events-title-zone">
+            <h2 class="Events-zone-title" data-translate="Container-Event_title"></h2>
         </div>
-    </div>
-
-    <div id="event-details" class="event-details" onclick="hideDetail(event)">
-        <button class="close-button" onclick="hideDetail()">Close</button>
-        <div id="event-detail-content">
-            <h2>Event Title</h2>
-            <div class="image-carousel" id="image-carousel">
-                <button class="prev-btn" onclick="prevSlide()">&#9664;</button>
-                <div id="carousel-wrapper" class="carousel-wrapper">
-                    <!-- The images will be inserted here dynamically -->
-                </div>
-                <button class="next-btn" onclick="nextSlide()">&#9654;</button>
+        <div class="events-container">
+            <div class="events-container scroll-1" id="events-container">
+                <!-- Dynamic events will be inserted here -->
             </div>
-            <p>Event description goes here. This text will wrap below the images.</p>
+        </div>
+        <div id="event-details" class="event-details" onclick="hideDetail(event)">
+            <button class="close-button" onclick="hideDetail()">Close</button>
+            <div id="event-detail-content">
+                <h2>Event Title</h2>
+                <div class="image-carousel" id="image-carousel">
+                    <button class="prev-btn" onclick="prevSlide()">&#9664;</button>
+                    <div id="carousel-wrapper" class="carousel-wrapper">
+                        <!-- The images will be inserted here dynamically -->
+                    </div>
+                    <button class="next-btn" onclick="nextSlide()">&#9654;</button>
+                </div>
+                <p>Event description goes here. This text will wrap below the images.</p>
+            </div>
         </div>
     </div>
 </div>
