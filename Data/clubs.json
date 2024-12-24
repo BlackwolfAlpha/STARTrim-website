@@ -1,0 +1,48 @@
+{
+  "clubs": [
+    {
+      "image": "design/Main-page/clubs/Pdc.png",
+      "name": {
+        "he": "מועדון התפתחות אישית",
+        "en": "Personal development club"
+      },
+      "description": {
+        "he": "מועדון המתמקד בחיזוק מיומנויות רכות כגון מנהיגות, פתרון בעיות וחשיבה יצירתית. באמצעות סדנאות, הרצאות ופעילויות מעשיות, החברים משפרים את כישוריהם האישיים והמקצועיים.",
+        "en": "A club that focuses on strengthening skills such as leadership, problem solving and creative thinking. Through lectures and practical activities, the members improve their personal and professional skills."
+      }
+    },
+    {
+      "image": "design/Main-page/clubs/Famc.png",
+      "name": {
+        "he": "מועדון פיננסים וכסף",
+        "en": "Finance and money club"
+      },
+      "description": {
+        "he": "מועדון שמלמד את יסודות הכלכלה, ניהול תקציב והשקעות. המשתתפים לומדים כיצד לנהל כספים בחוכמה, מבינים מושגי יסוד פיננסיים, ומשתמשים בידע לניהול כלכלי אישי ועסקי.",
+        "en": "A club that teaches the basics of economics, budget management and investments. Participants learn how to manage money wisely and use the knowledge for personal and business financial management."
+      }
+    },
+    {
+      "image": "design/Main-page/clubs/Pc.png",
+      "name": {
+        "he": "מועדון תכנות",
+        "en": "Programming club"
+      },
+      "description": {
+        "he": "מועדון המיועד למתעניינים בפיתוח תוכנה. החברים לומדים ויוצרים יחד פרויקטים בתכנות, מפתחים כישורים טכנולוגיים ומקבלים כלים מתקדמים המאפשרים להם להתמודד עם אתגרים בתחום פיתוח התוכנה.",
+        "en": "A club intended for those interested in software development. where they learn and create programming projects together, develop technological skills and receive tools they need."
+      }
+    },
+    {
+      "image": "design/Main-page/clubs/MSC.png",
+      "name": {
+        "he": "מועדון שיווק ומכירות",
+        "en": "Marketing and Sales Club"
+      },
+      "description": {
+        "he": "מועדון שמעניק ידע וכלים בתחומי השיווק, הפרסום והמכירות. החברים לומדים אסטרטגיות שיווק דיגיטלי, טכניקות מכירה, ובונים תוכניות שיווקיות יישומיות לפרויקטים.",
+        "en": "A club that provides knowledge and tools in the fields of marketing, advertising and sales. Members learn digital marketing strategies, sales techniques, and build practical marketing plans for projects."
+      }
+    }
+  ]
+}
