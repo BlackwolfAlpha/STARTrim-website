@@ -1,0 +1,347 @@
+/* תצוגת מסך פתיח ראשי */
+.main_logo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* --------------- */
+
+/* תוכן ראשי */
+.content {
+    width: 100%;
+    min-height: 45vh;
+    color: #fff;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    /* אם להוריד את זה ירד הרקע האחיד */
+    background: linear-gradient(#450066, #2c0140);
+    /*---------------------------------- */
+    overflow: hidden;
+    margin-top: -5px;
+}
+
+.content .par {
+    padding-bottom: 25px;
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+.content h1 {
+    font-family: "Suez One", serif;
+    font-size: 60px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.content_info p.par {
+    font-family: "Rubik", sans-serif;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+}
+
+[dir="rtl"] .content_info p.par {
+    margin-left: 80px;
+    margin-right: auto;
+}
+
+[dir="ltr"] .content_info p.par {
+    margin-right: 150px;
+    margin-left: auto;
+}
+
+/*---------------------------------- */
+
+/* תחילת עיצוב מבנה האירועים */
+/* אם להוריד את זה ירד הרקע האחיד */
+.events {
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(#2c0140, #450066);
+    overflow: hidden;
+}
+
+.events-title {
+    margin-top: -5px;
+    font-family: "Suez One", serif;
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+}
+
+.events-title::before,
+.events-title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #8310bc;
+    margin-top: 5px;
+}
+
+.events-section {
+    margin: 60px;
+}
+
+/*---------------------------------- */
+
+/* תחילת עיצוב שותפי אירוח */
+/* אם להוריד את זה ירד הרקע האחיד */
+.Hostings {
+    width: 100%;
+    min-height: 40vh;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#450066, #2c0140);
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.Hosting-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Suez One", serif;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.Hosting-title::before,
+.Hosting-title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #8310bc;
+    margin-top: 5px;
+}
+
+.Hosting-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
+    width: 55%;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.Hosting-partner {
+    flex: 0 1 auto;
+    width: 180px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.Hosting-partner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.Hosting-partner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/*---------------------------------- */
+
+/* תחילת עיצוב שותפים */
+/* אם להוריד את זה ירד הרקע האחיד */
+.partners {
+    width: 100%;
+    min-height: 40vh;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(#2c0140, #450066);
+    overflow: hidden;
+    margin-top: -10px;
+}
+
+.partners-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Suez One", serif;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.partners-title::before,
+.partners-title::after {
+    content: "";
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #8310bc;
+    margin-top: 5px;
+}
+
+.partners-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow: hidden;
+    width: 55%;
+    position: relative;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.partner {
+    flex: 0 1 auto;
+    width: 180px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.partner:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.partner img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/*---------------------------------- */
+
+/* תחילת עיצוב מבנה מועודנים */
+.Clubs {
+    width: 100%;
+    min-height: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(#2c0140, #450066);
+    overflow: hidden;
+    margin-top: -10px;
+    padding: 40px 20px;
+}
+
+.Clubs-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Suez One", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 4px;
+    transition: color 0.3s ease;
+}
+
+.Clubs-section {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.club-card {
+    width: 360px;
+    height: 550px;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.club-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+}
+
+.club-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    transition: opacity 0.3s ease;
+}
+
+.club-info {
+    padding: 20px;
+    background-color: #671090;
+    color: white;
+    flex-grow: 1;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.club-info h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.club-info p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/*---------------------------------- */
+

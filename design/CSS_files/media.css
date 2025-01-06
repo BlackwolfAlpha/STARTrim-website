@@ -1,0 +1,935 @@
+@media (hover: none) and (pointer: coarse) {
+    .social-item:hover {
+        transform: none;
+        border-color: initial;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .main_logo {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 1280px) {
+    .content_comment::after {
+        display: none;
+    }
+    .content_comment::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .content h1::before {
+        top: -20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .sign-up-form {
+        width: 80%;
+        max-height: 85vh;
+        overflow: hidden;
+        top: 54%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .input-box, textarea, .button {
+        font-size: 16px;
+        padding: 8px;
+        margin: 6px 0;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1280px) {
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 65px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .content_comment {
+        margin-top: 35px;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .partners-container {
+        width: 100%;
+    }
+
+    .partner {
+        width: 150px;
+        height: 90px;
+        padding: 10px;
+    }
+
+    .partners-title {
+        margin-top: 145px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+/* התאמות לרוחב מסך מקסימלי של 1024px */
+@media (max-width: 1024px) {
+    .content_comment {
+        margin-top: 135px;
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .content_comment::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 4px;
+        background-color: rgba(0, 0, 0, 0.3);
+        top: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .sign-up-form {
+        width: 90%;
+        max-height: 80vh;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .input-box, textarea, .button {
+        font-size: 14px;
+        padding: 6px;
+        margin: 4px 0;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .content h1::before {
+        top: -23px;
+    }
+
+    .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 1024px) {
+    #event-form, #comment-form {
+        width: 50%;
+        padding: 20px;
+        position: relative;
+        top: 5px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card_comment::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 75px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .partners-title {
+        margin-top: 235px;
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .footer-section {
+        flex: 1;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+        font-family: "Rubik", sans-serif;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .modal-container {
+        width: 60%;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .modal-container textarea {
+        font-size: 20px;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+    }
+}
+
+/* עיצוב מותאם למסכים בגודל 1024px ומטה */
+@media (max-width: 1024px) {
+    .Blogs-page-content {
+        flex-direction: row;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .AI_blogs-slides,
+    .economy_blogs-slides,
+    .Youth_projects-slides {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .blog-item {
+        width: 90%;
+        max-width: 450px;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 16px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-item img {
+        height: auto;
+        max-height: 250px;
+    }
+
+    .blog-item h3 {
+        font-size: 21px;
+    }
+
+    .blog-item p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .blog-item span {
+        font-size: 14px;
+    }
+}
+
+/* התאמות לרוחב מסך מקסימלי של 950px */
+@media (max-width: 950px) {
+    html[dir="rtl"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 100px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: -25px;
+        text-align: center;
+    }
+}
+
+/* התאמות לרוחב מסך מקסימלי של 767px */
+@media (max-width: 768px) {
+    .card_comment {
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .card_comment::before {
+        display: none;
+    }
+    .container {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .card {
+        margin-right: 0;
+        margin-bottom: 20px;
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .card__image[data-title]::before {
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 767px) {
+    #event-form, #comment-form {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    html[dir="rtl"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 20px;
+        line-height: 1.6;
+        margin-left: 0px;
+    }
+    html[dir="ltr"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 17px;
+        line-height: 1.6;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 720px) {
+    html[dir="rtl"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 70px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 40px;
+        padding-top: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-btn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .signup-background {
+        background: linear-gradient(#450066, #2c0140);
+    }
+}
+
+@media (max-width: 767px) {
+    .content .logo_page {
+        height: 75px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    ul {
+        justify-content: space-between;
+    }
+
+    ul li {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 10px;
+        margin-top: 0px;
+    }
+
+    .content .par {
+        padding: 0 10px 10px 10px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+        padding: 0 10px;
+    }
+
+    .content .cn {
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    .content span {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container::-webkit-scrollbar {
+        border-radius: 5px;
+        width: 8px;
+        height: 10px;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+        width: 8px;
+        height: 10px;
+    }
+}
+
+@media (min-width: 767px) {
+    .container::-webkit-scrollbar:horizontal {
+        display: none;
+    }
+
+    .container::-webkit-scrollbar {
+        width: 8px;
+        height: 0;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sign-up-form {
+        width: 90%;
+        padding: 20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .input-box,
+    .button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    textarea {
+        font-size: 18px;
+    }
+
+    #join-community-heading {
+        font-size: 20px;
+    }
+
+    #signup-form,
+    #sign-up-form {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .partners-container {
+        flex-direction: column;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .partner {
+        width: 150px;
+        height: 90px;
+    }
+
+    .partners-title {
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+        font-size: 30px;
+        margin-top: 0;
+    }
+
+    .prev-button, .next-button {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .Clubs-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .Clubs-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .club-card {
+        width: 90%;
+        margin: 10px 0;
+        max-width: 350px;
+    }
+
+    .club-info h3 {
+        font-size: 20px;
+    }
+
+    .club-info p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .scroll-button {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .prev-button {
+        left: 50%;
+        transform: translateX(-100%);
+    }
+
+    .next-button {
+        right: 50%;
+        transform: translateX(100%);
+    }
+}
+
+@media (max-width: 767px) {
+    .Stages-choose {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        font-family: Arial, sans-serif;
+        position: relative;
+        text-align: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-top: 10px;
+    }
+
+    .footer-content .par {
+        font-family: "Rubik", sans-serif;
+        color: white;
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        line-height: 25px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        padding: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+        text-decoration: none;
+        transition: color 0.3s, padding-left 0.3s;
+        padding-left: 5px;
+    }
+
+    .footer-section ul li a:hover {
+        text-decoration: underline;
+        padding-left: 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        font-family: "Rubik", sans-serif;
+    }
+
+    .footer-bottom p {
+        margin: 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .footer-bottom a {
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s, text-shadow 0.3s;
+        font-family: "Rubik", sans-serif;
+    }
+
+    .footer-bottom a:hover {
+        text-decoration: underline;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-family: "Rubik", sans-serif;
+    }
+
+    .social-item {
+        display: flex;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        margin: 10px 0;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 255, 255, 0.4);
+        transition: box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+
+    .social-item:hover {
+        transform: scale(1.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+        border-radius: 0;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+
+    .social-item .social-text {
+        font-size: 16px;
+        font-family: "Rubik", sans-serif;
+        line-height: 1.2;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Blogs-main-title {
+        font-size: 26px;
+    }
+
+    .blog-item h3 {
+        font-size: 15px;
+    }
+
+    .blog-item p {
+        font-size: 13.6px;
+    }
+
+    #blog-detail-title {
+        font-size: 28px;
+    }
+
+    #blog-detail-image {
+        width: 350px;
+        height: 300px;
+    }
+
+    .blog-container h1 {
+        font-size: 32px;
+    }
+
+    .close-button {
+        font-size: 18px;
+        height: 35px;
+        width: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .Blogs-header {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .Blogs-main-title {
+        font-size: 28px;
+    }
+
+    .unBlogs-title {
+        font-size: 22px;
+    }
+
+    .Blogs-filter {
+        max-width: 100%;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .filter-button {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .Blogs-page-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .AI_blogs-slides,
+    .economy_blogs-slides,
+    .Youth_projects-slides {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .blog-item {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .blog-item img {
+        height: auto;
+        border-radius: 6px;
+    }
+
+    .blog-item h3 {
+        font-size: 18px;
+    }
+
+    .blog-item p {
+        font-size: 15px;
+    }
+
+    #blog-details {
+        padding: 15px;
+    }
+
+    #blog-detail-title {
+        font-size: 28px;
+    }
+
+    #blog-detail-description {
+        font-size: 16px;
+    }
+
+    #blog-detail-author,
+    #blog-detail-duration {
+        font-size: 18px;
+    }
+
+    #blog-detail-image {
+        width: 100%;
+        height: auto;
+    }
+
+    #blog-detail-author-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .close-button {
+        font-size: 18px;
+        height: 36px;
+        width: 70px;
+    }
+
+    .blog-container {
+        padding: 20px;
+    }
+
+    .blog-container h1 {
+        font-size: 40px;
+    }
+
+    .blog-container p {
+        font-size: 18px;
+    }
+}
+
+/* התאמות לרוחב מסך מקסימלי של 576px */
+@media (max-width: 576px) {
+    html[dir="rtl"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 110px;
+        text-align: center;
+    }
+    html[dir="ltr"] .events-title {
+        font-size: 36px;
+        padding-top: 0;
+        margin-top: 0px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .main_logo {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .content .logo_page {
+        height: 50px;
+    }
+}
+
+
+@media (max-width: 576px) {
+  .modal-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+    textarea {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .AI_blogs-slides, .economy_blogs-slides, .Youth_projects-slides {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .blog-item {
+        padding: 6px;
+    }
+
+    .blog-item h3 {
+        font-size: 16px;
+    }
+
+    .blog-item p {
+        font-size: 15px;
+    }
+
+    #blog-details {
+        padding: 10px;
+    }
+
+    #blog-detail-title {
+        font-size: 24px;
+    }
+
+    #blog-detail-description {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    #blog-detail-author, #blog-detail-duration {
+        font-size: 14px;
+    }
+
+    .blog-container h1 {
+        font-size: 28px;
+    }
+
+    .blog-container p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .close-button {
+        font-size: 16px;
+        height: 30px;
+        width: 60px;
+        top: 40px;
+        right: 10px;
+    }
+}
+
+/* התאמות לרוחב מסך מקסימלי של 500px */
+@media (max-width: 500px) {
+    html[dir="rtl"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 17.5px;
+        line-height: 1.6;
+        margin-right: 0px;
+    }
+    html[dir="ltr"] .content_info p.par {
+        font-family: "Rubik", sans-serif;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-right: 0px;
+    }
+}
+
