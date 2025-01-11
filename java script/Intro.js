@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // בדוק אם הספירה לאחור כבר הסתיימה
-    localStorage.removeItem("countdownEnded");
+    // localStorage.removeItem("countdownEnded");
     if (localStorage.getItem("countdownEnded")) {
         document.getElementById("intro").style.display = "none";
         return; // יציאה מהפונקציה אם הספירה לאחור הסתיימה
