@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     // בדוק אם הספירה לאחור כבר הסתיימה
-    // localStorage.removeItem("countdownEnded");
+    localStorage.removeItem("countdownEnded");
     if (localStorage.getItem("countdownEnded")) {
         document.getElementById("intro").style.display = "none";
         return; // יציאה מהפונקציה אם הספירה לאחור הסתיימה
     }
 
-    // קבע תאריך סוף הספירה לאחור (21 באוקטובר 2024, 12:00)
-    const countdownDate = new Date("2024-10-21T12:00:00").getTime();
+    // קבע תאריך סוף הספירה לאחור (21 באוקטובר 2026, 12:00)
+    const countdownDate = new Date("2026-10-21T12:00:00").getTime();
     // const countdownDate = new Date(Date.now() + 60000).getTime(); //(test mode)
 
     const x = setInterval(function() {
